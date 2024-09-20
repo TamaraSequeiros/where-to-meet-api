@@ -1,0 +1,385 @@
+{
+  "routes": [
+    {
+      "legs": [
+        {
+          "distanceMeters": 2539,
+          "duration": "466s",
+          "staticDuration": "466s",
+          "polyline": {
+            "encodedPolyline": "ibu~Hc_|\\?FAN?J?H@Nr@~@BDp@hA@B@@bA|ALNZTlAfBn@|@j@z@nAjBBDn@bAPTvAlBlA`BbB`CBBzAzBj@z@VT@@B@@@@@LF@@@@`@T\\RB@B@JHR@D@@?PBH@N@h@@L?p@@j@Db@DTDt@Lx@LPBVDf@JXHFBHDNFHFD@HDJDNFRFJB^LB@b@LH?NBP@NE\\O^S`@U^YDCd@k@t@}@Xg@RYNSJGHELCVADABANG@?B@F@HFDDHHFFJFFFD@ZFPDL@D@\\DN@LBTDf@LVFXHRDNFLDPD^FPBJBVFd@L~@Tf@Nb@L@?JBLDB@B@\\?z@TJBZHD@HFj@LD@J@D@^JXFEh@KxA?@Ex@Ed@Q|B?HADKrAMfBKpA?@IbAANABZXBBVTHJB@PNLJPNJHFFDBBFD@DDXTTRHHFFB@^X@@B@HJ@@FFDDHDFDPLFDFBJHNNHF@@l@x@BDHNJNCD"
+          },
+          "startLocation": {
+            "latLng": {
+              "latitude": 52.3781275,
+              "longitude": 4.899858
+            }
+          },
+          "endLocation": {
+            "latLng": {
+              "latitude": 52.3605618,
+              "longitude": 4.8859511
+            }
+          },
+          "steps": [
+            {
+              "distanceMeters": 21,
+              "staticDuration": "4s",
+              "polyline": {
+                "encodedPolyline": "ibu~Hc_|\\?FAN?J?H@N"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 52.3781275,
+                  "longitude": 4.899858
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 52.378127199999994,
+                  "longitude": 4.8995505999999995
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "DEPART",
+                "instructions": "Head west on Stationsplein"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "21 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "BICYCLE"
+            },
+            {
+              "distanceMeters": 757,
+              "staticDuration": "132s",
+              "polyline": {
+                "encodedPolyline": "ibu~He}{\\r@~@BDp@hA@B@@bA|ALNZTlAfBn@|@j@z@nAjBBDn@bAPTvAlBlA`BbB`CBBzAzBj@z@VT@@B@@@@@LF@@@@`@T\\RB@B@JH"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 52.378127199999994,
+                  "longitude": 4.8995505999999995
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 52.3727186,
+                  "longitude": 4.8928696999999994
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.8 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "BICYCLE"
+            },
+            {
+              "distanceMeters": 654,
+              "staticDuration": "112s",
+              "polyline": {
+                "encodedPolyline": "o`t~Hmsz\\R@D@@?PBH@N@h@@L?p@@j@Db@DTDt@Lx@LPBVDf@JXHFBHDNFHFD@HDJDNFRFJB^LB@b@LH?NBP@NE\\O^S`@U^YDCd@k@t@}@Xg@RYNSJGHELCVADABA"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 52.3727186,
+                  "longitude": 4.8928696999999994
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 52.367166999999995,
+                  "longitude": 4.8934659
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "NAME_CHANGE",
+                "instructions": "Continue onto Rokin"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.7 km"
+                },
+                "staticDuration": {
+                  "text": "2 mins"
+                }
+              },
+              "travelMode": "BICYCLE"
+            },
+            {
+              "distanceMeters": 55,
+              "staticDuration": "8s",
+              "polyline": {
+                "encodedPolyline": "y}r~Hewz\\NG@?B@F@HFDDHHFFJFFFD@"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 52.367166999999995,
+                  "longitude": 4.8934659
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 52.3667169,
+                  "longitude": 4.8932354
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "NAME_CHANGE",
+                "instructions": "Continue onto Muntplein"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "55 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "BICYCLE"
+            },
+            {
+              "distanceMeters": 498,
+              "staticDuration": "87s",
+              "polyline": {
+                "encodedPolyline": "_{r~Hwuz\\ZFPDL@D@\\DN@LBTDf@LVFXHRDNFLDPD^FPBJBVFd@L~@Tf@Nb@L@?JBLDB@B@\\?z@TJBZHD@HFj@LD@J@D@^JXF"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 52.3667169,
+                  "longitude": 4.8932354
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 52.3623279,
+                  "longitude": 4.8918153000000011
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "NAME_CHANGE",
+                "instructions": "Continue onto Vijzelstraat"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.5 km"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "BICYCLE"
+            },
+            {
+              "distanceMeters": 255,
+              "staticDuration": "45s",
+              "polyline": {
+                "encodedPolyline": "q_r~H{lz\\Eh@KxA?@Ex@Ed@Q|B?HADKrAMfBKpA?@IbAANAB"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 52.3623279,
+                  "longitude": 4.8918153000000011
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 52.362837299999995,
+                  "longitude": 4.8881553
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Prinsengracht"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.3 km"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "BICYCLE"
+            },
+            {
+              "distanceMeters": 227,
+              "staticDuration": "40s",
+              "polyline": {
+                "encodedPolyline": "wbr~H_vy\\ZXBBVTHJB@PNLJPNJHFFDBBFD@DDXTTRHHFFB@^X@@B@HJ@@FFDDHDFDPLFDFBJH"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 52.362837299999995,
+                  "longitude": 4.8881553
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 52.361039,
+                  "longitude": 4.8865897999999994
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_LEFT",
+                "instructions": "Turn left onto Brug 69/Spiegelgracht"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "0.2 km"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "BICYCLE"
+            },
+            {
+              "distanceMeters": 69,
+              "staticDuration": "12s",
+              "polyline": {
+                "encodedPolyline": "owq~Hely\\NNHF@@l@x@BDHNJN"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 52.361039,
+                  "longitude": 4.8865897999999994
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 52.3605448,
+                  "longitude": 4.8859844
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "NAME_CHANGE",
+                "instructions": "Continue onto Museumbrug"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "69 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "BICYCLE"
+            },
+            {
+              "distanceMeters": 3,
+              "staticDuration": "26s",
+              "polyline": {
+                "encodedPolyline": "ktq~Hkhy\\CD"
+              },
+              "startLocation": {
+                "latLng": {
+                  "latitude": 52.3605448,
+                  "longitude": 4.8859844
+                }
+              },
+              "endLocation": {
+                "latLng": {
+                  "latitude": 52.3605618,
+                  "longitude": 4.8859511
+                }
+              },
+              "navigationInstruction": {
+                "maneuver": "TURN_RIGHT",
+                "instructions": "Turn right onto Stadhouderskade/S100\nDestination will be on the left"
+              },
+              "localizedValues": {
+                "distance": {
+                  "text": "3 m"
+                },
+                "staticDuration": {
+                  "text": "1 min"
+                }
+              },
+              "travelMode": "BICYCLE"
+            }
+          ],
+          "localizedValues": {
+            "distance": {
+              "text": "2.5 km"
+            },
+            "duration": {
+              "text": "8 mins"
+            },
+            "staticDuration": {
+              "text": "8 mins"
+            }
+          }
+        }
+      ],
+      "distanceMeters": 2539,
+      "duration": "466s",
+      "staticDuration": "466s",
+      "polyline": {
+        "encodedPolyline": "ibu~Hc_|\\?FAN?J?H@Nr@~@BDp@hA@B@@bA|ALNZTlAfBn@|@j@z@nAjBBDn@bAPTvAlBlA`BbB`CBBzAzBj@z@VT@@B@@@@@LF@@@@`@T\\RB@B@JHR@D@@?PBH@N@h@@L?p@@j@Db@DTDt@Lx@LPBVDf@JXHFBHDNFHFD@HDJDNFRFJB^LB@b@LH?NBP@NE\\O^S`@U^YDCd@k@t@}@Xg@RYNSJGHELCVADABANG@?B@F@HFDDHHFFJFFFD@ZFPDL@D@\\DN@LBTDf@LVFXHRDNFLDPD^FPBJBVFd@L~@Tf@Nb@L@?JBLDB@B@\\?z@TJBZHD@HFj@LD@J@D@^JXFEh@KxA?@Ex@Ed@Q|B?HADKrAMfBKpA?@IbAANABZXBBVTHJB@PNLJPNJHFFDBBFD@DDXTTRHHFFB@^X@@B@HJ@@FFDDHDFDPLFDFBJHNNHF@@l@x@BDHNJNCD"
+      },
+      "description": "Rokin",
+      "viewport": {
+        "low": {
+          "latitude": 52.3605448,
+          "longitude": 4.8859511
+        },
+        "high": {
+          "latitude": 52.378136899999994,
+          "longitude": 4.899858
+        }
+      },
+      "travelAdvisory": {},
+      "localizedValues": {
+        "distance": {
+          "text": "2.5 km"
+        },
+        "duration": {
+          "text": "8 mins"
+        },
+        "staticDuration": {
+          "text": "8 mins"
+        }
+      },
+      "routeLabels": [
+        "DEFAULT_ROUTE"
+      ]
+    }
+  ],
+  "geocodingResults": {
+    "origin": {
+      "geocoderStatus": {},
+      "type": [
+        "bus_station",
+        "establishment",
+        "point_of_interest",
+        "subway_station",
+        "train_station",
+        "transit_station"
+      ],
+      "placeId": "ChIJIxbYDbcJxkcRQtHfOo0b58o"
+    },
+    "destination": {
+      "geocoderStatus": {},
+      "type": [
+        "establishment",
+        "museum",
+        "point_of_interest",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJ5Ra7we4JxkcRhYVAaq5zQ9U"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "wheretogo",
+  "version": "1.0.0",
+  "description": "API to choose location",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Tamara Sequeiros",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "haversine-distance": "^1.2.3",
+    "jest": "^29.7.0",
+    "nock": "^13.5.5"
+  }
+}
