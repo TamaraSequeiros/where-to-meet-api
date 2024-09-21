@@ -1,0 +1,19 @@
+{ "error": {
+    "code": 400,
+    "message": "Invalid JSON payload received. Unknown name \"origin\": Proto field is not repeating, cannot start list.\n + Invalid JSON payload received. Unknown name \"destination\": Proto field is not repeating, cannot start list.",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.BadRequest",
+        "fieldViolations":  [
+            {
+              "description": "Invalid JSON payload received. Unknown name \"origin\": Proto field is not repeating, cannot start list."
+            },
+            {
+              "description": "Invalid JSON payload received. Unknown name \"destination\": Proto field is not repeating, cannot start list."
+            }
+          ]
+      }
+    ]
+  }
+}

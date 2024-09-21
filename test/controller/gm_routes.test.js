@@ -8,19 +8,27 @@ middle_route1 = {
     longitude: 4.8934659
 }
 
-test('Mock call', async() => {
+const HOST = 'https://routes.googleapis.com';
+const PATH = '/directions/v2:computeRoutes';
+
+test('Mock success call', async() => {
     const json = file_util.read_json_file('./test/files/mock_route1-bycicle.json');
 
-    nock("https://routes.googleapis.com")
-    .post("/directions/v2:computeRoutes")
+    nock(HOST).post(PATH)
     .reply(200, json);
     
-    // doesn't matter
-    const location1 = [0, 0]; 
-    const location2 = [0, 0];
-
-    let middle_point = await gm_routes.call(location1, location2)
+    let middle_point = await gm_routes.calculate_middle([], []);
     expect(middle_point).toEqual(middle_route1);
+});
+
+test('Mock error call', async() => {
+    const json = file_util.read_json_file('./test/files/mock_error.json');
+
+    nock(HOST).post(PATH)
+    .reply(400, json);
+
+    const response = await gm_routes.calculate_middle([], []);
+    expect(response).toEqual('Error retrieving routes');
 });
 
 test('Process route1 to return coordinates', async () => {

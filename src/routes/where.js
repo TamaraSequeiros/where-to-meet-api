@@ -1,21 +1,14 @@
 const express = require('express');
-const haversine = require('haversine-distance');
 const gm_routes = require('../controller/gm_routes');
-const gm_places = require('../controller/gm_places');
 
 const router = express.Router();
 
-router.post('/:middle', function(req, res) {
-   const locations = req.body.addresses;
-   locations.forEach((element) => {
-      console.log(element);
-   });
-
-   // TODO get coordinates from addresses
+router.post('/:middle', async function(req, res) {
+   const locations = req.body.locations;
    
-   let middle_point = calculate_middle('geographical', location1, location2);
-
-   let response = {
+   const middle_point = await calculate_middle(req.body.method, locations[0], locations[1]);
+   console.log(middle_point);
+   const response = {
       'middle_point' : middle_point
    }
    res.send(response);
@@ -23,13 +16,22 @@ router.post('/:middle', function(req, res) {
 
 function calculate_middle(method, origin, destination) {
    if (method === 'geographical') {
-      return haversine(origin, destination)
+      const avg_lat = (origin[0] + destination[0]) / 2;
+      const avg_lng = (origin[1] + destination[1]) / 2;
+      return [avg_lat, avg_lng];
    
    } else if (method === 'route') {
-      return gm_routes.call(origin, destination);
+      let middle_coord; 
+      try {
+         middle_coord = gm_routes.calculate_middle(origin, destination);
+      } catch (error) {
+         console.log(error);
+         return 'N/A';
+      }
+      return middle_coord;
    
    } else {
-      throw new Error('Method ' + method + ' not supported')
+      throw new Error('Method ' + method + ' not supported');
    }
 }
 

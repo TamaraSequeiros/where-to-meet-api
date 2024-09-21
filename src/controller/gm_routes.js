@@ -1,33 +1,53 @@
-require('dotenv').config();
-const axios = require('axios');
+const http_util = require('../util/http_util');
 
 const options = {
     url: 'https://routes.googleapis.com/directions/v2:computeRoutes',
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
-        'X-Goog-Api-Key': process.env.GOOGLE_API_KEY
-    },
+        'X-Goog-Api-Key': process.env.GOOGLE_API_KEY,
+        'X-Goog-FieldMask': 'routes.staticDuration,' +
+                            'routes.legs.steps.staticDuration,' +
+                            'routes.legs.steps.startLocation,' +
+                            'routes.legs.steps.endLocation,' +
+                            'routes.polyline.encodedPolyline'
+    }
 };
 
-const call = async (location1, location2) => {
+const calculate_middle = async (location1, location2) => {
     options.data = {
-            origin: location1,
-            destination: location2
+        origin: {
+            location : {
+                latLng : {
+                    latitude : location1[0],
+                    longitude : location1[1]
+                }
+            }
+        },
+        destination: {
+            location : {
+                latLng : {
+                    latitude : location2[0],
+                    longitude : location2[1]
+                }
+            }
+        },
+        travelMode: 'BICYCLE'
     }
-        
-    const response = await axios(options)
-    .then(ok => ok)
-    .catch(error => error);
 
+    const response = await http_util.post(options);
+    if (response.hasError) {
+        console.dir(response, { depth: null });
+        return 'Error retrieving routes';
+    }
     return process_route(response.data);
 };
 
-const process_route = (response) => {
-    const route = response.routes[0];
+const process_route = (route_data) => {
+    const route = route_data.routes[0];
     const halfway_time = get_halfway_time(route.staticDuration);
     const location = get_halfway_location(route.legs[0].steps, halfway_time);
-    return { 'latitude' : location.latitude, 'longitude' : location.longitude }
+    return { 'latitude' : location.latitude, 'longitude' : location.longitude };
 }
 
 const get_halfway_time = (duration) => {
@@ -51,7 +71,7 @@ const get_halfway_location = (steps, halfway_time) => {
     }
 }
 
-exports.call = call;
+exports.calculate_middle = calculate_middle;
 if (process.env['NODE_DEV'] == 'TEST') {
     module.exports.process_route = process_route;
 }
