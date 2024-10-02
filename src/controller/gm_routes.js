@@ -19,27 +19,28 @@ const calculate_middle = async (location1, location2) => {
         origin: {
             location : {
                 latLng : {
-                    latitude : location1[0],
-                    longitude : location1[1]
+                    latitude : location1.lat,
+                    longitude : location1.lng
                 }
             }
         },
         destination: {
             location : {
                 latLng : {
-                    latitude : location2[0],
-                    longitude : location2[1]
+                    latitude : location2.lat,
+                    longitude : location2.lng
                 }
             }
         },
         travelMode: 'BICYCLE'
     }
 
-    const response = await http_util.post(options);
+    const response = await http_util.call(options);
     if (response.hasError) {
         console.dir(response, { depth: null });
         return 'Error retrieving routes';
     }
+    console.log(response.data)
     return process_route(response.data);
 };
 
@@ -47,7 +48,7 @@ const process_route = (route_data) => {
     const route = route_data.routes[0];
     const halfway_time = get_halfway_time(route.staticDuration);
     const location = get_halfway_location(route.legs[0].steps, halfway_time);
-    return { 'latitude' : location.latitude, 'longitude' : location.longitude };
+    return { 'lat': location.latitude, 'lng': location.longitude };
 }
 
 const get_halfway_time = (duration) => {

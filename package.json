@@ -2,7 +2,7 @@
   "name": "wheretogo",
   "version": "1.0.0",
   "description": "API to choose location",
-  "main": "server.js",
+  "main": "src/routes/server.js",
   "scripts": {
     "test": "jest"
   },
@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^1.7.7",
     "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "jest": "^29.7.0",

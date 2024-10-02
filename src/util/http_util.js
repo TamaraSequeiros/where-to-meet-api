@@ -1,7 +1,7 @@
 require('dotenv').config();
 const axios = require('axios');
 
-const post = async (options) => {
+const call = async (options) => {
     try {
         const response = await axios(options);
         return response;
@@ -19,4 +19,4 @@ const post = async (options) => {
     }
 }
 
-exports.post = post;
+exports.call = call;
