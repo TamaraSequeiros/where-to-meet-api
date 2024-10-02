@@ -65,7 +65,7 @@ const get_halfway_location = (steps, halfway_time) => {
             const step_start_time = time_travelled - step_duration;
             if (halfway_time - step_start_time < time_travelled - halfway_time) {
                 // TODO
-                console.log('We were closer behore, helaas pindakaas');
+                console.log('We were closer before, helaas pindakaas');
             }
             return step.endLocation.latLng;
         }

@@ -4,6 +4,14 @@ const axios = require('axios');
 const call = async (options) => {
     try {
         const response = await axios(options);
+        if (response.error_message) {
+            error_response = {
+                hasError: true,
+                message: response.error_message,
+                status: response.status
+            }
+            return error_response;
+        }
         return response;
     } catch (error) {
         error_response = {
