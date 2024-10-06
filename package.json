@@ -4,6 +4,7 @@
   "description": "API to choose location",
   "main": "src/routes/server.js",
   "scripts": {
+    "start": "node src/routes/server.js",
     "test": "jest"
   },
   "author": "Tamara Sequeiros",
