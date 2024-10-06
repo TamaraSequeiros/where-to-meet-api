@@ -25,8 +25,7 @@ async function find_coordinates(reqBody) {
    
    } else if (reqBody.addresses) {
       if (process.env.NODE_ENV == 'dev') {
-         console.log('first: ' + process.env.NODE_ENV)
-         return [{"lat":52.3787257,"lng":4.8989942},{"lat":52.3752182,"lng":4.8839765}];
+         return process.env.DEV_LOCATIONS;
       }
       let coord1 = await gm_geocoding.get_coordinates(reqBody.addresses[0]);
       let coord2 = await gm_geocoding.get_coordinates(reqBody.addresses[1]);
@@ -45,8 +44,7 @@ function calculate_middle(method, origin, destination) {
    
    } else if (method === 'route') {
       if (process.env.NODE_ENV == 'dev') {
-         console.log('second: ' + process.env.NODE_ENV)
-         return {"lat":52.37697195,"lng":4.89148535};
+         return process.env.DEV_MIDDLE;
       } 
       let middle_coord; 
       try {

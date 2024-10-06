@@ -14,6 +14,7 @@ const call = async (options) => {
         }
         return response;
     } catch (error) {
+        console.dir(error, {depth: null})
         error_response = {
             hasError: true,
             message: error.message,
