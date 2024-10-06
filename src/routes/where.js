@@ -7,7 +7,10 @@ const router = express.Router();
 router.post('/:middle', async function(req, res) {
    
    const locations = await find_coordinates(req.body);
-   console.log('Requested locations: ' + JSON.stringify(locations), ' with method: ' + req.body.method);
+   console.log('Requested locations: ' + JSON.stringify(locations), ', with method: ' + req.body.method);
+   if (locations.hasError) {
+      return locations.errorMessage;
+   }
    const middle_point = await calculate_middle(req.body.method, locations[0], locations[1]);
    console.log('Calculated middle point: ' + JSON.stringify(middle_point));
    const response = {

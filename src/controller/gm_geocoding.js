@@ -12,9 +12,8 @@ const get_coordinates = async (address) => {
     const response = await http_util.call(options);
     if (response.hasError) {
         console.dir(response, { depth: null });
-        return 'Error geocoding addresses';
+        return { hasError : true, errorMessage : 'Error geocoding addresses'};
     }
-    console.dir(response.data, { depth: null })
     return response.data.results[0].geometry.location;
 };
 
