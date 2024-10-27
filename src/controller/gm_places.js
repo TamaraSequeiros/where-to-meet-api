@@ -7,6 +7,7 @@ const options = {
         'Content-Type': 'application/json',
         'X-Goog-FieldMask': 'places.displayName,' +
                             'places.formattedAddress,' +
+                            'places.googleMapsUri,' +
                             'places.rating,' +
                             'places.location,' +
                             'places.types,' +
