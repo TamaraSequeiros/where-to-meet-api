@@ -1,0 +1,37 @@
+{
+    "places": [
+      {
+        "formattedAddress": "Korsjespoortsteeg 3, 1015 AP Amsterdam, Netherlands",
+        "location": { "latitude": 52.3771753, "longitude": 4.8914857 },
+        "rating": 4.8,
+        "displayName": {
+          "text": "Bed and Breakfast Amsterdam The Blue Sheep",
+          "languageCode": "en"
+        }
+      },
+      {
+        "formattedAddress": "Centrum, Singel 43, 1012 VC Amsterdam, Netherlands",
+        "location": { "latitude": 52.3769883, "longitude": 4.8924797 },
+        "rating": 4.5,
+        "displayName": { "text": "Louis", "languageCode": "nl" }
+      },
+      {
+        "formattedAddress": "Lijnbaanssteeg 10, 1012 SR Amsterdam, Netherlands",
+        "location": { "latitude": 52.376168, "longitude": 4.891783000000001 },
+        "rating": 4.7,
+        "displayName": { "text": "The Craftsmen Kitchen","languageCode": "en" }
+      },
+      {
+        "formattedAddress": "Lijnbaanssteeg 5-7, 1012 TE Amsterdam, Netherlands",
+        "location": { "latitude": 52.3761301, "longitude": 4.891723600000001 },
+        "rating": 4.6,
+        "displayName": { "text": "Tales & Spirits", "languageCode": "en" }
+      },
+      {
+        "formattedAddress": "Spuistraat 50, 1012 TV Amsterdam, Netherlands",
+        "location": { "latitude": 52.3762508, "longitude": 4.8923039 },
+        "rating": 3.6,
+        "displayName": { "text": "Curry Express", "languageCode": "nl" }
+      }
+    ]
+  }
