@@ -13,32 +13,43 @@ router.post('/:nearby', async function(req, res) {
 });
 
 async function get_places(lat, lng) {
-    const places = await gm_places.get_nearby_places(lat, lng); 
-    for (place of places.places) {
+    const placesFoundNearby = await gm_places.get_nearby_places(lat, lng, 10);
+    let venues = [];
+    for (place of placesFoundNearby.places) {
+        if (place.businessStatus.startsWith('CLOSED')) {
+            continue;
+        }
+        if (venues.length > 4) {
+            break;
+        }
         place.displayName = place.displayName.text;
+        if (place.primaryTypeDisplayName) {
+            place.primaryTypeDisplayName = place.primaryTypeDisplayName.text;
+        }
         representPriceLevel(place);
+        venues.push(place);
     }
-    console.dir(places, { depth: null });
-    return places;
+    const response = { places: venues };
+    console.dir( response, { depth: null });
+    return response;
  }
 
 function representPriceLevel(place) {
     switch (place.priceLevel) {
-        case 'PRICE_LEVEL_FREE':
-            place.priceLevel = 'Free!'
-            break;
         case 'PRICE_LEVEL_INEXPENSIVE':
-            place.priceLevel = '$'
+            place.priceLevel = '€'
             break;
         case 'PRICE_LEVEL_MODERATE':
-            place.priceLevel = '$$'
+            place.priceLevel = '€€'
             break;
         case 'PRICE_LEVEL_EXPENSIVE':
-            place.priceLevel = '$$$'
+            place.priceLevel = '€€€'
             break;
         case 'PRICE_LEVEL_VERY_EXPENSIVE':
-            place.priceLevel = '$$$$'
+            place.priceLevel = '€€€€'
             break;
+        default:
+            place.priceLevel = null;
     }
  }
 

@@ -5,21 +5,28 @@ const options = {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json',
-        'X-Goog-FieldMask': 'places.displayName,' +
+        'X-Goog-FieldMask': 'places.displayName.text,' +
                             'places.formattedAddress,' +
                             'places.googleMapsUri,' +
                             'places.rating,' +
                             'places.location,' +
+                            'places.primaryTypeDisplayName.text,' +
                             'places.types,' +
+                            'places.dineIn,' +
+                            'places.servesWine,' +
+                            'places.servesBeer,' +
+                            'places.servesCocktails,' +
+                            'places.businessStatus,' +
                             'places.priceLevel',
         'X-Goog-Api-Key': process.env.GOOGLE_API_KEY
     }
 };
 
-const get_nearby_places = async (lat, lng) => {
+const get_nearby_places = async (lat, lng, maxCount) => {
     options.data = {
-        includedTypes: [ "restaurant", "bar" ],
-        maxResultCount: 5,
+        includedPrimaryTypes: [ "restaurant", "bar" ],
+        // excludedPrimaryTypes: [],
+        maxResultCount: maxCount,
         rankPreference: "DISTANCE",
         locationRestriction: {
             circle: {
@@ -27,7 +34,7 @@ const get_nearby_places = async (lat, lng) => {
                     latitude: lat,
                     longitude: lng
                 },
-                radius: 500.0
+                radius: 1000.0
             }
         }
     }
