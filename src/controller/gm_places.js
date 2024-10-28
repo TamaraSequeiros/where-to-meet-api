@@ -17,7 +17,8 @@ const options = {
                             'places.servesBeer,' +
                             'places.servesCocktails,' +
                             'places.businessStatus,' +
-                            'places.priceLevel',
+                            'places.priceLevel,' +
+                            'places.userRatingCount',
         'X-Goog-Api-Key': process.env.GOOGLE_API_KEY
     }
 };

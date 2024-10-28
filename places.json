@@ -1,0 +1,1916 @@
+{
+  places: [
+    {
+      name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE',
+      id: 'ChIJf2ly3FMJxkcR0rfdI9JGnDE',
+      types: [ 'restaurant', 'food', 'point_of_interest', 'establishment' ],
+      nationalPhoneNumber: '06 28079666',
+      internationalPhoneNumber: '+31 6 28079666',
+      formattedAddress: 'Markenplein 30 A, 1011 MV Amsterdam, Netherlands',
+      addressComponents: [
+        {
+          longText: '30 A',
+          shortText: '30 A',
+          types: [ 'street_number' ],
+          languageCode: 'en-US'
+        },
+        {
+          longText: 'Markenplein',
+          shortText: 'Markenplein',
+          types: [ 'route' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Amsterdam-Centrum',
+          shortText: 'Amsterdam-Centrum',
+          types: [ 'sublocality_level_1', 'sublocality', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Amsterdam',
+          shortText: 'Amsterdam',
+          types: [ 'locality', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Amsterdam',
+          shortText: 'Amsterdam',
+          types: [ 'administrative_area_level_2', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Noord-Holland',
+          shortText: 'NH',
+          types: [ 'administrative_area_level_1', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Netherlands',
+          shortText: 'NL',
+          types: [ 'country', 'political' ],
+          languageCode: 'en'
+        },
+        {
+          longText: '1011 MV',
+          shortText: '1011 MV',
+          types: [ 'postal_code' ],
+          languageCode: 'en-US'
+        }
+      ],
+      plusCode: {
+        globalCode: '9F469W94+97',
+        compoundCode: '9W94+97 Amsterdam, Netherlands'
+      },
+      location: { latitude: 52.368479699999995, longitude: 4.9057376999999995 },
+      viewport: {
+        low: { latitude: 52.3670628697085, longitude: 4.904472619708498 },
+        high: { latitude: 52.3697608302915, longitude: 4.907170580291503 }
+      },
+      rating: 4.7,
+      googleMapsUri: 'https://maps.google.com/?cid=3574810072584140754',
+      websiteUri: 'http://www.restaurantblackolive.nl/',
+      regularOpeningHours: {
+        openNow: false,
+        periods: [
+          {
+            open: { day: 1, hour: 17, minute: 0 },
+            close: { day: 1, hour: 22, minute: 0 }
+          },
+          {
+            open: { day: 2, hour: 17, minute: 0 },
+            close: { day: 2, hour: 22, minute: 0 }
+          },
+          {
+            open: { day: 3, hour: 17, minute: 0 },
+            close: { day: 3, hour: 22, minute: 0 }
+          },
+          {
+            open: { day: 4, hour: 17, minute: 0 },
+            close: { day: 4, hour: 22, minute: 0 }
+          },
+          {
+            open: { day: 5, hour: 17, minute: 0 },
+            close: { day: 5, hour: 22, minute: 0 }
+          },
+          {
+            open: { day: 6, hour: 17, minute: 0 },
+            close: { day: 6, hour: 22, minute: 0 }
+          }
+        ],
+        weekdayDescriptions: [
+          'Monday: 5:00 – 10:00 PM',
+          'Tuesday: 5:00 – 10:00 PM',
+          'Wednesday: 5:00 – 10:00 PM',
+          'Thursday: 5:00 – 10:00 PM',
+          'Friday: 5:00 – 10:00 PM',
+          'Saturday: 5:00 – 10:00 PM',
+          'Sunday: Closed'
+        ]
+      },
+      utcOffsetMinutes: 60,
+      adrFormatAddress: '<span class="street-address">Markenplein 30 A</span>, <span class="postal-code">1011 MV</span> <span class="locality">Amsterdam</span>, <span class="country-name">Netherlands</span>',
+      businessStatus: 'OPERATIONAL',
+      userRatingCount: 451,
+      iconMaskBaseUri: 'https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet',
+      iconBackgroundColor: '#FF9E67',
+      displayName: 'Restaurant Black Olive Amsterdam',
+      primaryTypeDisplayName: 'Restaurant',
+      delivery: false,
+      dineIn: true,
+      curbsidePickup: false,
+      reservable: true,
+      servesLunch: true,
+      servesDinner: true,
+      servesBeer: true,
+      servesWine: true,
+      currentOpeningHours: {
+        openNow: false,
+        periods: [
+          {
+            open: {
+              day: 1,
+              hour: 17,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 28 }
+            },
+            close: {
+              day: 1,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 28 }
+            }
+          },
+          {
+            open: {
+              day: 2,
+              hour: 17,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 29 }
+            },
+            close: {
+              day: 2,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 29 }
+            }
+          },
+          {
+            open: {
+              day: 3,
+              hour: 17,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 30 }
+            },
+            close: {
+              day: 3,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 30 }
+            }
+          },
+          {
+            open: {
+              day: 4,
+              hour: 17,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 31 }
+            },
+            close: {
+              day: 4,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 31 }
+            }
+          },
+          {
+            open: {
+              day: 5,
+              hour: 17,
+              minute: 0,
+              date: { year: 2024, month: 11, day: 1 }
+            },
+            close: {
+              day: 5,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 11, day: 1 }
+            }
+          },
+          {
+            open: {
+              day: 6,
+              hour: 17,
+              minute: 0,
+              date: { year: 2024, month: 11, day: 2 }
+            },
+            close: {
+              day: 6,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 11, day: 2 }
+            }
+          }
+        ],
+        weekdayDescriptions: [
+          'Monday: 5:00 – 10:00 PM',
+          'Tuesday: 5:00 – 10:00 PM',
+          'Wednesday: 5:00 – 10:00 PM',
+          'Thursday: 5:00 – 10:00 PM',
+          'Friday: 5:00 – 10:00 PM',
+          'Saturday: 5:00 – 10:00 PM',
+          'Sunday: Closed'
+        ]
+      },
+      primaryType: 'restaurant',
+      shortFormattedAddress: 'Markenplein 30 A, Amsterdam',
+      reviews: [
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/reviews/ChdDSUhNMG9nS0VJQ0FnSURueC1uSzRRRRAB',
+          relativePublishTimeDescription: '2 weeks ago',
+          rating: 5,
+          text: {
+            text: 'I was first struck by how sleek and modern the decor was. It was a beautifully done establishment.\n' +
+              '\n' +
+              'The service and food were both fantastic. Ordered lamb kafta and vegetarian dish. Everything we ordered was flavorful,  the bread to start was soft and warm. Good sized portions not too much.',
+            languageCode: 'en'
+          },
+          originalText: {
+            text: 'I was first struck by how sleek and modern the decor was. It was a beautifully done establishment.\n' +
+              '\n' +
+              'The service and food were both fantastic. Ordered lamb kafta and vegetarian dish. Everything we ordered was flavorful,  the bread to start was soft and warm. Good sized portions not too much.',
+            languageCode: 'en'
+          },
+          authorAttribution: {
+            displayName: 'Camisha D',
+            uri: 'https://www.google.com/maps/contrib/116662152819886906773/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjVYjYYqkpwfHcPF-Ka81_NhMgzzwgeaFC5aV1MIoEFQi47dc0cizw=s128-c0x00000000-cc-rp-mo-ba5'
+          },
+          publishTime: '2024-10-10T21:26:49.608864Z'
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/reviews/ChZDSUhNMG9nS0VJQ0FnSURuN2FILVhREAE',
+          relativePublishTimeDescription: '2 weeks ago',
+          rating: 5,
+          text: {
+            text: 'Amazing food! It made our trip to Amsterdam one to remember! The stuff is really nice, polite and very helpful! Reasonable price! Kostas very friendly guy! The lamp and the chicken were absolutely delicious! They also served us baklava in the end as a treat! Thank you guys! You do an amazing job here ! Don’t miss this place!',
+            languageCode: 'en'
+          },
+          originalText: {
+            text: 'Amazing food! It made our trip to Amsterdam one to remember! The stuff is really nice, polite and very helpful! Reasonable price! Kostas very friendly guy! The lamp and the chicken were absolutely delicious! They also served us baklava in the end as a treat! Thank you guys! You do an amazing job here ! Don’t miss this place!',
+            languageCode: 'en'
+          },
+          authorAttribution: {
+            displayName: 'EVI K',
+            uri: 'https://www.google.com/maps/contrib/114823377976041183640/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjXW09i96H9n0HV8YSasbomGqSXcdgI2c4IztSWGMpMsHFALV3U=s128-c0x00000000-cc-rp-mo'
+          },
+          publishTime: '2024-10-08T19:38:33.012605Z'
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/reviews/ChdDSUhNMG9nS0VJQ0FnSUNIbU4zZXZBRRAB',
+          relativePublishTimeDescription: 'a month ago',
+          rating: 5,
+          text: {
+            text: 'Amazing food and service! The wait staff was accommodating and patient with our requests! Definitely recommend! The rice, lamb kebab, and pastrami humus was to die for! They were even nice enough to gift us some baklava! 🧡',
+            languageCode: 'en'
+          },
+          originalText: {
+            text: 'Amazing food and service! The wait staff was accommodating and patient with our requests! Definitely recommend! The rice, lamb kebab, and pastrami humus was to die for! They were even nice enough to gift us some baklava! 🧡',
+            languageCode: 'en'
+          },
+          authorAttribution: {
+            displayName: 'Kira Thomas',
+            uri: 'https://www.google.com/maps/contrib/105285762379845291516/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWjy9VEdfi0pC_44LU2d-DbrGqP6fbnHlXAmiEu39iMeHgMqAA=s128-c0x00000000-cc-rp-mo'
+          },
+          publishTime: '2024-08-31T19:52:51.165020Z'
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/reviews/ChZDSUhNMG9nS0VJQ0FnSURycHBmZ0hREAE',
+          relativePublishTimeDescription: '3 months ago',
+          rating: 5,
+          text: {
+            text: 'Ordered the lamb shoulder for two and it was phenomenal! The meat was so tender and just fell off the bone, came with both rice and patatas bravas which were both really nice too. Would definitely recommend!',
+            languageCode: 'en'
+          },
+          originalText: {
+            text: 'Ordered the lamb shoulder for two and it was phenomenal! The meat was so tender and just fell off the bone, came with both rice and patatas bravas which were both really nice too. Would definitely recommend!',
+            languageCode: 'en'
+          },
+          authorAttribution: {
+            displayName: 'Josh Gledhill',
+            uri: 'https://www.google.com/maps/contrib/105315700784677971564/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjVmKAafb5xTdBCoceEtx_gNZ32C5KPd9Si_INICme1CRt4DxRC8Fg=s128-c0x00000000-cc-rp-mo-ba2'
+          },
+          publishTime: '2024-07-17T07:33:26.215672Z'
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/reviews/ChdDSUhNMG9nS0VJQ0FnSURUN29QUnBnRRAB',
+          relativePublishTimeDescription: '5 months ago',
+          rating: 5,
+          text: {
+            text: "Tonight was perfect. We all liked all mezes, drinks and food. The owner was very friendly and helpful about our requests. There wasn't any time limitations. We had to cancel reservation at Ali Ocakbaşı due to the time limits. With a big group you cannot eat in 2 hours and just leave. Also I wanted to pick the leftover from my meal. They added extra pilaf without telling me. Thanks for extra. Turkish tea was from them. Everything was perfect for us. We all enjoyed a lot. Thanks Black Olive 🫒🫒",
+            languageCode: 'en'
+          },
+          originalText: {
+            text: "Tonight was perfect. We all liked all mezes, drinks and food. The owner was very friendly and helpful about our requests. There wasn't any time limitations. We had to cancel reservation at Ali Ocakbaşı due to the time limits. With a big group you cannot eat in 2 hours and just leave. Also I wanted to pick the leftover from my meal. They added extra pilaf without telling me. Thanks for extra. Turkish tea was from them. Everything was perfect for us. We all enjoyed a lot. Thanks Black Olive 🫒🫒",
+            languageCode: 'en'
+          },
+          authorAttribution: {
+            displayName: 'Gonca Coşkun',
+            uri: 'https://www.google.com/maps/contrib/105982116895844448133/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjULlsUFAhl0w98DRiB56ERqYMI7WQDzgPrm-zU2N3U1IaoZqyE=s128-c0x00000000-cc-rp-mo-ba3'
+          },
+          publishTime: '2024-05-24T21:55:37.646353Z'
+        }
+      ],
+      photos: [
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/photos/AdCG2DPv7wUGlVDHRTVRrTMUUtGAVLLcZhG2qmHxUmK_ImTwv7HC5_UWEPiz7CeqfzX5yUtt0wDjWXMKemFP5McnO07KM7Zxrkrw1f-TxvZzu-ByMKeqRyKGCUcis8g8f8X8YFR2qI0zoaa97N_34-nI4PKW5hTrysP6keHz',
+          widthPx: 4800,
+          heightPx: 3200,
+          authorAttributions: [
+            {
+              displayName: 'Restaurant Black Olive Amsterdam',
+              uri: 'https://maps.google.com/maps/contrib/114589027888276795583',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjUgpcxdao2wAJMPnIbFk4QbugUFly-Zic_4PHk4ffctKtxmcII=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/photos/AdCG2DMvvfSIXWvNBQ8fXF5L2CPkazR4AGPiMnI0irvyR2Zz7iQsJ8slfwtgQrk1zciZnYqwuo1DQHF3HBCY-H19IyskpF3wufnbo5t7F9NQAAWqFxxxFTS27eIhPUpoct0T19hMwckA1C1fb7xw7BddU0FtsF5mSzKXkAfO',
+          widthPx: 720,
+          heightPx: 406,
+          authorAttributions: [
+            {
+              displayName: 'Restaurant Black Olive Amsterdam',
+              uri: 'https://maps.google.com/maps/contrib/114589027888276795583',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjUgpcxdao2wAJMPnIbFk4QbugUFly-Zic_4PHk4ffctKtxmcII=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/photos/AdCG2DPb-sDEVds7k1bQlFh4Op4ol8gvdAc0UhSwXbq6LvUFTUOfPlDp9t7KH72ef5Mq-wlWN3sXYswcCw2L1Wy3keX0sTuDxAzylgTMk8EN_ivpJGGf65OP4nJ7DNPVebIP8gG3aJaC63gxvmcEfDNJ142bzCbTc8H_eDBG',
+          widthPx: 3024,
+          heightPx: 4032,
+          authorAttributions: [
+            {
+              displayName: 'EVI K',
+              uri: 'https://maps.google.com/maps/contrib/114823377976041183640',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjXW09i96H9n0HV8YSasbomGqSXcdgI2c4IztSWGMpMsHFALV3U=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/photos/AdCG2DNHRQu91SMpFHy4zHW7yQlNaWD5fyd7RJMhXvuKPhY2bIcHzsRK1A5BNfPfWD2LF0PADzEpc7b1h8O_QdT0XD1lSbt8L1k6Tz43OS3xoFM8c-86gKe5PK0FoVGSg8YsLT77NkY_c4atJ3N2OId0j4cktKuOA7aRcgOw',
+          widthPx: 4000,
+          heightPx: 3000,
+          authorAttributions: [
+            {
+              displayName: 'Daniel Suter',
+              uri: 'https://maps.google.com/maps/contrib/110362297448137947658',
+              photoUri: 'https://lh3.googleusercontent.com/a/ACg8ocKgjFbcdz_4S4__WgYHwn1zyyXJFBX1Y4Zh9ou0knlvFgTBvg=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/photos/AdCG2DN-pUnrzbAhTx24jKPCLj0dJKeOWaa1tCrIU1xnqgpBunyaBpI1sRPLcvhvOwcNDDgFsMvRlk65GxciHtw625sNU6zz3_fmGGVysTZlKNZsHX53QsGeSURWMQvuFYG45dg8sW3cVhahAX9Zw4BI0CYounyGHztGoerk',
+          widthPx: 4032,
+          heightPx: 3024,
+          authorAttributions: [
+            {
+              displayName: 'Rachna arora',
+              uri: 'https://maps.google.com/maps/contrib/115856546885466583012',
+              photoUri: 'https://lh3.googleusercontent.com/a/ACg8ocI_RP0M2RS5S6JGwqD0X65NLS9r2VeBdLV7fdzZfoyyTAUuaXNr=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/photos/AdCG2DO45WEk4LhlaqoJNffDmTG5WaNEEWIsKuNlt9Oorcknl253jVk-DmbGkBEhcFLqW5XVOEMjpQ12Qfghz4XZEl4Sr0HtLj1UFY60iwnHkDKrM_1YS3JLxhQ99Cdfa0KE5WLxrSQ6yAgjqnM7oF5Qp2DJGGTfPJ921oYD',
+          widthPx: 4000,
+          heightPx: 3000,
+          authorAttributions: [
+            {
+              displayName: 'Geoffrey Fivaz',
+              uri: 'https://maps.google.com/maps/contrib/105077262465219513487',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWLe1NEHCRO18m142dXSYxi4wKgBGmaXpbJ-1HMc5c10We6HYVIzw=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/photos/AdCG2DMt1lLAk7i-kt5dpFJb1Xg3_oglsvPY9UXwjLq1wHmLDfHKHz3f35ibB6kVIsl2AvUsfL2pBJ27f-sOIXwO5n3R3JzieTR16zY3T_rXYEPJxj0IYhJucHGluuCB7gRSkfH0gCOFF_h55lQjgjk4KXaXKBEmFekbQK4N',
+          widthPx: 860,
+          heightPx: 574,
+          authorAttributions: [
+            {
+              displayName: 'İsmail Üngör',
+              uri: 'https://maps.google.com/maps/contrib/103545096640145409743',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjXB6rpAvXVe2AGbOjg87TGQFMYJFkwi5tlzID46ui-n3pPSXwYZ=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/photos/AdCG2DO5a-ONjTB_8xO7iSvz5YLG0uxbUOIpNZMI1QSfa2kv-g3gEQePoFo5V71BCgKAVxdCxz24_a05DkicgwdVpFS5suNYVBs65gNA-SjY-Eqf7evYE6cJCKqpctWEJSesVCRQ0OyHiBbO3RHFnQftQtk2XNrtX08obI1n',
+          widthPx: 4032,
+          heightPx: 3024,
+          authorAttributions: [
+            {
+              displayName: 'Alessio Roberto',
+              uri: 'https://maps.google.com/maps/contrib/110422589000312242993',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjUywajd-NMoTdLKOaHMpsA-CrSRsJHi5KBmK7UEu3HTM25CtJeSsw=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/photos/AdCG2DNfyJBK9K5EU9KSRqtRXdRSxJFiqbvvmKbgY0nVGjSy2iRmcD02gIBfHdN9eP2y-Vf3iU3j8oj1mP4oPKMZep2JTBw7uN0vOaOSrq2p99IXW6LPRVVtIHpL6HOUf3RJyrHFHvZfORQUKugWzaoHRIIZYdlevag3aAYZ',
+          widthPx: 720,
+          heightPx: 720,
+          authorAttributions: [
+            {
+              displayName: 'Restaurant Black Olive Amsterdam',
+              uri: 'https://maps.google.com/maps/contrib/114589027888276795583',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjUgpcxdao2wAJMPnIbFk4QbugUFly-Zic_4PHk4ffctKtxmcII=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJf2ly3FMJxkcR0rfdI9JGnDE/photos/AdCG2DO9d2kmWAHJplf1uOO-iL3_DI0VbOGu8sgk0_g350Krm9jKBsnl48V-05ainfOJLckjoURIKYXoD-iGWjSvDcYY3P6oynIZYCHw5xUWS8RrZZkF1Toa4yiuQSfLlTrY6ZJIlD8NLyFtQii_kddX3H713ivHW8BGWVCB',
+          widthPx: 3024,
+          heightPx: 4032,
+          authorAttributions: [
+            {
+              displayName: 'Atilla Yıldız',
+              uri: 'https://maps.google.com/maps/contrib/102045762215907322835',
+              photoUri: 'https://lh3.googleusercontent.com/a/ACg8ocLSqqzEehzD-Xx2EFtUmlYlMwpeUgEhB7i3Hw5OVLUXHfdD9w=s100-p-k-no-mo'
+            }
+          ]
+        }
+      ],
+      liveMusic: false,
+      servesDessert: true,
+      servesCoffee: true,
+      restroom: true,
+      goodForGroups: true,
+      goodForWatchingSports: false,
+      paymentOptions: {
+        acceptsCreditCards: true,
+        acceptsDebitCards: true,
+        acceptsCashOnly: false,
+        acceptsNfc: true
+      },
+      parkingOptions: { paidParkingLot: true, paidGarageParking: true },
+      accessibilityOptions: {
+        wheelchairAccessibleEntrance: true,
+        wheelchairAccessibleRestroom: true,
+        wheelchairAccessibleSeating: true
+      },
+      addressDescriptor: {
+        landmarks: [
+          {
+            name: 'places/ChIJ4Zj9GL0JxkcRG95ac28SfeA',
+            placeId: 'ChIJ4Zj9GL0JxkcRG95ac28SfeA',
+            displayName: { text: 'Café Waterlooplein 77', languageCode: 'nl' },
+            types: [ 'cafe', 'establishment', 'food', 'point_of_interest' ],
+            spatialRelationship: 'AROUND_THE_CORNER',
+            straightLineDistanceMeters: 40.2404,
+            travelDistanceMeters: 41.167896
+          },
+          {
+            name: 'places/ChIJ2QCfBr0JxkcR5k6sIrPafLY',
+            placeId: 'ChIJ2QCfBr0JxkcR5k6sIrPafLY',
+            displayName: {
+              text: 'The Netherlands Film Academy',
+              languageCode: 'en'
+            },
+            types: [ 'establishment', 'point_of_interest', 'university' ],
+            spatialRelationship: 'ACROSS_THE_ROAD',
+            straightLineDistanceMeters: 34.942066,
+            travelDistanceMeters: 11.7404995
+          },
+          {
+            name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU',
+            placeId: 'ChIJmz2W_bwJxkcR9aW1XLdd9LU',
+            displayName: { text: 'Restaurant Olijfje', languageCode: 'nl' },
+            types: [
+              'establishment',
+              'food',
+              'point_of_interest',
+              'restaurant'
+            ],
+            spatialRelationship: 'AROUND_THE_CORNER',
+            straightLineDistanceMeters: 38.156456,
+            travelDistanceMeters: 81.46558
+          },
+          {
+            name: 'places/ChIJMzKtC70JxkcRLL3Z3onUWAI',
+            placeId: 'ChIJMzKtC70JxkcRLL3Z3onUWAI',
+            displayName: {
+              text: 'Portuguese Synagogue of Amsterdam',
+              languageCode: 'en'
+            },
+            types: [
+              'establishment',
+              'place_of_worship',
+              'point_of_interest',
+              'synagogue',
+              'tourist_attraction'
+            ],
+            straightLineDistanceMeters: 109.776024,
+            travelDistanceMeters: 134.71906
+          },
+          {
+            name: 'places/ChIJqxRzZuLhxUcRpgvqX1nIp1A',
+            placeId: 'ChIJqxRzZuLhxUcRpgvqX1nIp1A',
+            displayName: { text: 'Hortus Botanicus', languageCode: 'en' },
+            types: [
+              'establishment',
+              'park',
+              'point_of_interest',
+              'tourist_attraction'
+            ],
+            straightLineDistanceMeters: 215.65488,
+            travelDistanceMeters: 266.3015
+          }
+        ],
+        areas: [
+          {
+            name: 'places/ChIJofmNs70JxkcRW3JX3kjkIrk',
+            placeId: 'ChIJofmNs70JxkcRW3JX3kjkIrk',
+            displayName: { text: 'Jodenbuurt', languageCode: 'en' },
+            containment: 'WITHIN'
+          },
+          {
+            name: 'places/ChIJV2ADLroJxkcR7vJohxnpu9k',
+            placeId: 'ChIJV2ADLroJxkcR7vJohxnpu9k',
+            displayName: { text: 'Nieuwmarkt en Lastage', languageCode: 'nl' },
+            containment: 'WITHIN'
+          },
+          {
+            name: 'places/ChIJ0-khaLsJxkcRm73OQ7Ahm9I',
+            placeId: 'ChIJ0-khaLsJxkcRm73OQ7Ahm9I',
+            displayName: { text: 'Amsterdam-Centrum', languageCode: 'nl' },
+            containment: 'WITHIN'
+          }
+        ]
+      },
+      priceLevel: null
+    },
+    {
+      name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU',
+      id: 'ChIJmz2W_bwJxkcR9aW1XLdd9LU',
+      types: [
+        'mediterranean_restaurant',
+        'vegan_restaurant',
+        'vegetarian_restaurant',
+        'turkish_restaurant',
+        'restaurant',
+        'food',
+        'point_of_interest',
+        'establishment'
+      ],
+      nationalPhoneNumber: '020 330 4444',
+      internationalPhoneNumber: '+31 20 330 4444',
+      formattedAddress: 'Valkenburgerstraat 223D, 1011 MJ Amsterdam, Netherlands',
+      addressComponents: [
+        {
+          longText: '223D',
+          shortText: '223D',
+          types: [ 'street_number' ],
+          languageCode: 'en-US'
+        },
+        {
+          longText: 'Valkenburgerstraat',
+          shortText: 'Valkenburgerstraat',
+          types: [ 'route' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Amsterdam-Centrum',
+          shortText: 'Amsterdam-Centrum',
+          types: [ 'sublocality_level_1', 'sublocality', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Amsterdam',
+          shortText: 'Amsterdam',
+          types: [ 'locality', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Amsterdam',
+          shortText: 'Amsterdam',
+          types: [ 'administrative_area_level_2', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Noord-Holland',
+          shortText: 'NH',
+          types: [ 'administrative_area_level_1', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Netherlands',
+          shortText: 'NL',
+          types: [ 'country', 'political' ],
+          languageCode: 'en'
+        },
+        {
+          longText: '1011 MJ',
+          shortText: '1011 MJ',
+          types: [ 'postal_code' ],
+          languageCode: 'en-US'
+        }
+      ],
+      plusCode: {
+        globalCode: '9F469W94+G5',
+        compoundCode: '9W94+G5 Amsterdam, Netherlands'
+      },
+      location: { latitude: 52.3687767, longitude: 4.9054562 },
+      viewport: {
+        low: { latitude: 52.3675050697085, longitude: 4.904032219708499 },
+        high: { latitude: 52.37020303029149, longitude: 4.906730180291503 }
+      },
+      rating: 4.6,
+      googleMapsUri: 'https://maps.google.com/?cid=13111207457298163189',
+      websiteUri: 'https://www.restaurantolijfje.nl/',
+      regularOpeningHours: {
+        openNow: false,
+        periods: [
+          {
+            open: { day: 1, hour: 15, minute: 0 },
+            close: { day: 1, hour: 22, minute: 0 }
+          },
+          {
+            open: { day: 2, hour: 15, minute: 0 },
+            close: { day: 2, hour: 22, minute: 0 }
+          },
+          {
+            open: { day: 3, hour: 15, minute: 0 },
+            close: { day: 3, hour: 22, minute: 0 }
+          },
+          {
+            open: { day: 4, hour: 15, minute: 0 },
+            close: { day: 4, hour: 22, minute: 0 }
+          },
+          {
+            open: { day: 5, hour: 15, minute: 0 },
+            close: { day: 5, hour: 22, minute: 0 }
+          },
+          {
+            open: { day: 6, hour: 15, minute: 0 },
+            close: { day: 6, hour: 22, minute: 0 }
+          }
+        ],
+        weekdayDescriptions: [
+          'Monday: 3:00 – 10:00 PM',
+          'Tuesday: 3:00 – 10:00 PM',
+          'Wednesday: 3:00 – 10:00 PM',
+          'Thursday: 3:00 – 10:00 PM',
+          'Friday: 3:00 – 10:00 PM',
+          'Saturday: 3:00 – 10:00 PM',
+          'Sunday: Closed'
+        ]
+      },
+      utcOffsetMinutes: 60,
+      adrFormatAddress: '<span class="street-address">Valkenburgerstraat 223D</span>, <span class="postal-code">1011 MJ</span> <span class="locality">Amsterdam</span>, <span class="country-name">Netherlands</span>',
+      businessStatus: 'OPERATIONAL',
+      priceLevel: '€€',
+      userRatingCount: 3109,
+      iconMaskBaseUri: 'https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet',
+      iconBackgroundColor: '#FF9E67',
+      displayName: 'Restaurant Olijfje',
+      primaryTypeDisplayName: 'Mediterranean Restaurant',
+      takeout: true,
+      delivery: true,
+      dineIn: true,
+      reservable: true,
+      servesBreakfast: true,
+      servesLunch: true,
+      servesDinner: true,
+      servesBeer: true,
+      servesWine: true,
+      servesBrunch: true,
+      servesVegetarianFood: true,
+      currentOpeningHours: {
+        openNow: false,
+        periods: [
+          {
+            open: {
+              day: 1,
+              hour: 15,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 28 }
+            },
+            close: {
+              day: 1,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 28 }
+            }
+          },
+          {
+            open: {
+              day: 2,
+              hour: 15,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 29 }
+            },
+            close: {
+              day: 2,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 29 }
+            }
+          },
+          {
+            open: {
+              day: 3,
+              hour: 15,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 30 }
+            },
+            close: {
+              day: 3,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 30 }
+            }
+          },
+          {
+            open: {
+              day: 4,
+              hour: 15,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 31 }
+            },
+            close: {
+              day: 4,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 10, day: 31 }
+            }
+          },
+          {
+            open: {
+              day: 5,
+              hour: 15,
+              minute: 0,
+              date: { year: 2024, month: 11, day: 1 }
+            },
+            close: {
+              day: 5,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 11, day: 1 }
+            }
+          },
+          {
+            open: {
+              day: 6,
+              hour: 15,
+              minute: 0,
+              date: { year: 2024, month: 11, day: 2 }
+            },
+            close: {
+              day: 6,
+              hour: 22,
+              minute: 0,
+              date: { year: 2024, month: 11, day: 2 }
+            }
+          }
+        ],
+        weekdayDescriptions: [
+          'Monday: 3:00 – 10:00 PM',
+          'Tuesday: 3:00 – 10:00 PM',
+          'Wednesday: 3:00 – 10:00 PM',
+          'Thursday: 3:00 – 10:00 PM',
+          'Friday: 3:00 – 10:00 PM',
+          'Saturday: 3:00 – 10:00 PM',
+          'Sunday: Closed'
+        ]
+      },
+      currentSecondaryOpeningHours: [
+        {
+          openNow: false,
+          periods: [
+            {
+              open: {
+                day: 1,
+                hour: 13,
+                minute: 0,
+                date: { year: 2024, month: 10, day: 28 }
+              },
+              close: {
+                day: 1,
+                hour: 23,
+                minute: 30,
+                date: { year: 2024, month: 10, day: 28 }
+              }
+            },
+            {
+              open: {
+                day: 2,
+                hour: 13,
+                minute: 0,
+                date: { year: 2024, month: 10, day: 29 }
+              },
+              close: {
+                day: 2,
+                hour: 23,
+                minute: 30,
+                date: { year: 2024, month: 10, day: 29 }
+              }
+            },
+            {
+              open: {
+                day: 3,
+                hour: 13,
+                minute: 0,
+                date: { year: 2024, month: 10, day: 30 }
+              },
+              close: {
+                day: 3,
+                hour: 23,
+                minute: 30,
+                date: { year: 2024, month: 10, day: 30 }
+              }
+            },
+            {
+              open: {
+                day: 4,
+                hour: 13,
+                minute: 0,
+                date: { year: 2024, month: 10, day: 31 }
+              },
+              close: {
+                day: 4,
+                hour: 23,
+                minute: 30,
+                date: { year: 2024, month: 10, day: 31 }
+              }
+            },
+            {
+              open: {
+                day: 5,
+                hour: 13,
+                minute: 0,
+                date: { year: 2024, month: 11, day: 1 }
+              },
+              close: {
+                day: 5,
+                hour: 23,
+                minute: 30,
+                date: { year: 2024, month: 11, day: 1 }
+              }
+            },
+            {
+              open: {
+                day: 6,
+                hour: 13,
+                minute: 0,
+                date: { year: 2024, month: 11, day: 2 }
+              },
+              close: {
+                day: 6,
+                hour: 23,
+                minute: 30,
+                date: { year: 2024, month: 11, day: 2 }
+              }
+            }
+          ],
+          weekdayDescriptions: [
+            'Monday: 1:00 – 11:30 PM',
+            'Tuesday: 1:00 – 11:30 PM',
+            'Wednesday: 1:00 – 11:30 PM',
+            'Thursday: 1:00 – 11:30 PM',
+            'Friday: 1:00 – 11:30 PM',
+            'Saturday: 1:00 – 11:30 PM',
+            'Sunday: Closed'
+          ],
+          secondaryHoursType: 'TAKEOUT'
+        }
+      ],
+      regularSecondaryOpeningHours: [
+        {
+          openNow: false,
+          periods: [
+            {
+              open: { day: 1, hour: 13, minute: 0 },
+              close: { day: 1, hour: 23, minute: 30 }
+            },
+            {
+              open: { day: 2, hour: 13, minute: 0 },
+              close: { day: 2, hour: 23, minute: 30 }
+            },
+            {
+              open: { day: 3, hour: 13, minute: 0 },
+              close: { day: 3, hour: 23, minute: 30 }
+            },
+            {
+              open: { day: 4, hour: 13, minute: 0 },
+              close: { day: 4, hour: 23, minute: 30 }
+            },
+            {
+              open: { day: 5, hour: 13, minute: 0 },
+              close: { day: 5, hour: 23, minute: 30 }
+            },
+            {
+              open: { day: 6, hour: 13, minute: 0 },
+              close: { day: 6, hour: 23, minute: 30 }
+            }
+          ],
+          weekdayDescriptions: [
+            'Monday: 1:00 – 11:30 PM',
+            'Tuesday: 1:00 – 11:30 PM',
+            'Wednesday: 1:00 – 11:30 PM',
+            'Thursday: 1:00 – 11:30 PM',
+            'Friday: 1:00 – 11:30 PM',
+            'Saturday: 1:00 – 11:30 PM',
+            'Sunday: Closed'
+          ],
+          secondaryHoursType: 'TAKEOUT'
+        }
+      ],
+      primaryType: 'mediterranean_restaurant',
+      shortFormattedAddress: 'Valkenburgerstraat 223D, Amsterdam',
+      editorialSummary: {
+        text: 'Laid-back option preparing Mediterranean eats including casseroles, fish & grilled meats, plus wine.',
+        languageCode: 'en'
+      },
+      reviews: [
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/reviews/ChdDSUhNMG9nS0VJQ0FnSURIcGJDbG5RRRAB',
+          relativePublishTimeDescription: 'a month ago',
+          rating: 5,
+          text: {
+            text: 'A lovely young lady called Celine took excellent care of me and my wife. She was very attentive and cheerful. The food was excellent, the atmosphere was great and the wine was superb. I ordered the mixed grill which came with a lamb cutlet, 2 skewers of lamb and chicken and a separate piece of spiced lamb. All the meat was succulent and incredibly tasty. The deserts were delicious too. I highly recommend this excellent restaurant. 10/10.',
+            languageCode: 'en'
+          },
+          originalText: {
+            text: 'A lovely young lady called Celine took excellent care of me and my wife. She was very attentive and cheerful. The food was excellent, the atmosphere was great and the wine was superb. I ordered the mixed grill which came with a lamb cutlet, 2 skewers of lamb and chicken and a separate piece of spiced lamb. All the meat was succulent and incredibly tasty. The deserts were delicious too. I highly recommend this excellent restaurant. 10/10.',
+            languageCode: 'en'
+          },
+          authorAttribution: {
+            displayName: 'Mark Evans',
+            uri: 'https://www.google.com/maps/contrib/111513431382383438440/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjXaRQUmxlcbXer3zztRcqduhMdXjDGCot8mwrH7DylJIzouNgs=s128-c0x00000000-cc-rp-mo-ba3'
+          },
+          publishTime: '2024-09-18T07:03:56.216345Z'
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/reviews/ChdDSUhNMG9nS0VJQ0FnSUNIbjk2d3B3RRAB',
+          relativePublishTimeDescription: 'a month ago',
+          rating: 5,
+          text: {
+            text: 'Top notch service and excellent food. Everything was amazing, but if I were to pick one item in the menu, I would choose the lamb and eggplant casserole. The dessert is also worth it. We had kunefe and baklava.',
+            languageCode: 'en'
+          },
+          originalText: {
+            text: 'Top notch service and excellent food. Everything was amazing, but if I were to pick one item in the menu, I would choose the lamb and eggplant casserole. The dessert is also worth it. We had kunefe and baklava.',
+            languageCode: 'en'
+          },
+          authorAttribution: {
+            displayName: 'Madalina D.',
+            uri: 'https://www.google.com/maps/contrib/105791538463876209155/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a/ACg8ocLMVTmYFcB0H_ImndbEjh-lXJQHGQ0lOSJRKj_GX6n8CqxnJUI=s128-c0x00000000-cc-rp-mo-ba4'
+          },
+          publishTime: '2024-09-10T15:26:12.269011Z'
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/reviews/ChdDSUhNMG9nS0VJQ0FnSUNuX19XMXFnRRAB',
+          relativePublishTimeDescription: '3 weeks ago',
+          rating: 5,
+          text: {
+            text: 'I read ample reviews before coming here and this restaurant exceeded expectations. The sauces in the share 2 tapas are phenomenal and the dessert was unforgettable! Would order both again. Thank you for the amazing service! So kind and so giving!',
+            languageCode: 'en'
+          },
+          originalText: {
+            text: 'I read ample reviews before coming here and this restaurant exceeded expectations. The sauces in the share 2 tapas are phenomenal and the dessert was unforgettable! Would order both again. Thank you for the amazing service! So kind and so giving!',
+            languageCode: 'en'
+          },
+          authorAttribution: {
+            displayName: 'Ashley Dudman',
+            uri: 'https://www.google.com/maps/contrib/102077233036516672075/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjXu2NPBAtqjot41JrCqu9ydpX3qAeMIsfAr7FUrvfRpzVhfRTjr=s128-c0x00000000-cc-rp-mo'
+          },
+          publishTime: '2024-10-01T19:53:48.765927Z'
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/reviews/ChZDSUhNMG9nS0VJQ0FnSURUOE52OUpREAE',
+          relativePublishTimeDescription: '5 months ago',
+          rating: 5,
+          text: {
+            text: 'Recommend that you make a reservation. This place gets busy, because the food is divine. Bread is perfectly cooked and sauces are the perfect compliment. My lamb and eggplant casserole was the best Mediterranean food that I have ever tasted. Service that is attentive and kind.',
+            languageCode: 'en'
+          },
+          originalText: {
+            text: 'Recommend that you make a reservation. This place gets busy, because the food is divine. Bread is perfectly cooked and sauces are the perfect compliment. My lamb and eggplant casserole was the best Mediterranean food that I have ever tasted. Service that is attentive and kind.',
+            languageCode: 'en'
+          },
+          authorAttribution: {
+            displayName: 'Melissa Peragine',
+            uri: 'https://www.google.com/maps/contrib/101572647471814215612/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjXgq9T3bUO3VcUW6jMgYFE7TkyG9CSL2DWe-1rRhj1o2YwVXeM=s128-c0x00000000-cc-rp-mo'
+          },
+          publishTime: '2024-05-21T19:29:14.484400Z'
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/reviews/ChdDSUhNMG9nS0VJQ0FnSUNIbDU2UmdBRRAB',
+          relativePublishTimeDescription: 'a month ago',
+          rating: 5,
+          text: {
+            text: 'One of the best restaurants! 👌 high quality food, excellent and attentive staff and beautiful atmosphere 🌟',
+            languageCode: 'en'
+          },
+          originalText: {
+            text: 'One of the best restaurants! 👌 high quality food, excellent and attentive staff and beautiful atmosphere 🌟',
+            languageCode: 'en'
+          },
+          authorAttribution: {
+            displayName: 'Omar Hamid',
+            uri: 'https://www.google.com/maps/contrib/116946858230202605368/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a/ACg8ocJE4UydLhvdwYb4TNVYqaGn4axJwQTpVMNZc0DNzy6SvzlSDg=s128-c0x00000000-cc-rp-mo'
+          },
+          publishTime: '2024-09-09T21:51:22.139570Z'
+        }
+      ],
+      photos: [
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/photos/AdCG2DPircR6bNOc4zWwhYgPG-k4Ky5CyNU4ZvpHswSSkVTsrKUwbLLniSrXLc6owr8aORpAi4t4VdIWpVwycB7T4gweEfZTv3TRzvcVwiMxvv5fWUwI3zqET_jZkiL2FjXtp5nP7_ZsV7r2QmNCKx-R-gHd24lCjm6CGrGo',
+          widthPx: 4800,
+          heightPx: 3200,
+          authorAttributions: [
+            {
+              displayName: 'Restaurant Olijfje',
+              uri: 'https://maps.google.com/maps/contrib/103040558574649777954',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjVkB5KCELd3gWwPLqG1mLGy7Kq4hV4ba6ToYB7e2JTl4892QEg=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/photos/AdCG2DPbJPHhCHuftq9VwIuYO_hwp7ZtirLcbXd6FVXGXyP1f7nrLFLK-gx5KcggIibpfGQ5wEA7CeiT880JVvmU3D38U8CntyQEiO9HZel5WQ18wuHu_gHhn_xYIC-cV9Hms3DrJqi10y9pVlVigATcQjj_oCNXPiFWlyk1',
+          widthPx: 1024,
+          heightPx: 684,
+          authorAttributions: [
+            {
+              displayName: 'Restaurant Olijfje',
+              uri: 'https://maps.google.com/maps/contrib/103040558574649777954',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjVkB5KCELd3gWwPLqG1mLGy7Kq4hV4ba6ToYB7e2JTl4892QEg=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/photos/AdCG2DN2oNhl69CaZP07wvbDq2l_G47tts9rU8SgPN7TasVyYCsJnM1ziC1291OuE5m5FnY-IiHxAu_HIFL4khnlFqVzOY8k0yBTPWubBkSz91turmXyLur7dNHytMfAzR7WWcuRfB0M434EPytRNWuPVfyN_XUZrqn_AlTH',
+          widthPx: 2688,
+          heightPx: 1512,
+          authorAttributions: [
+            {
+              displayName: 'Bianca',
+              uri: 'https://maps.google.com/maps/contrib/113150816002703824436',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjXMSc1RYeN5cuUxhpSWFSZfmZgMqYaV6r3gYmZLCLVydJgfV1Hdzw=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/photos/AdCG2DPkl-926iOUBRgqvR1vknAs-X-GK8Yz3K6ZmoyB7kdFpucDF3U5RZ9ES-EesngrBxoS-TWFzsaH_ACZzTrNhzRKw8MF0e9Jg8Op9rCtlw-GpGc1xGVE8T7nBrPiW6lXCwvxtkOzUDKwdnUgkkL0suoPXlfy5yTYADRf',
+          widthPx: 4032,
+          heightPx: 2686,
+          authorAttributions: [
+            {
+              displayName: 'Daisyra Rosique Hernandez',
+              uri: 'https://maps.google.com/maps/contrib/107042221536498936964',
+              photoUri: 'https://lh3.googleusercontent.com/a/ACg8ocLKvoiqTE0v6r3sY0rkUNETzBTu7m22PxcFcZNbonyfRiCwiw=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/photos/AdCG2DPy9dyDQ4-iBDq0-xdk3sjXimPMT0p1BzO18PTy28yNVUhVZVeXz-KPEmXWd-as7NOKond4jojo0hP-LFzgqM5FSqmMoqNLUn81Ikmr-Iw5ZW1fapDkkZJpimu2DusPi-aEZWSBhThsQZJlSwfFthUEISTPa0VWA88s',
+          widthPx: 4030,
+          heightPx: 3022,
+          authorAttributions: [
+            {
+              displayName: 'rp',
+              uri: 'https://maps.google.com/maps/contrib/111484618066249174540',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjU-0gDf0orrdjzNX3GIGzxtVVjNlNB-W2vpAQUfGMFMDGiP86E=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/photos/AdCG2DNTmtzi829pmV_kvOmR6TBzU4wbjJOBMXru4YSjiSbQ3WL7HmNG81rVKQzV2Rsjtjk0RIF_kI4Dnb_SHhozJGCNSnUQVtecNd6eM5BdhJNwIUbmyrueE5SeGmTjvfFEV6Uaa0Gip4RnjQUTTBQeIDCIkRgR3l0H_T3P',
+          widthPx: 1157,
+          heightPx: 1055,
+          authorAttributions: [
+            {
+              displayName: 'Ashley Dudman',
+              uri: 'https://maps.google.com/maps/contrib/102077233036516672075',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjXu2NPBAtqjot41JrCqu9ydpX3qAeMIsfAr7FUrvfRpzVhfRTjr=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/photos/AdCG2DPW-4wY61kd7N_oecCH2mc7N9LH5SxdF_3efCTp0ULUOKGLDT8-xqSMY8p-XfZA19DjtTEKxvXiugfjYusiRhCBYdnpDUiZjYsvtJesW7ikk42JZdTee0cxkUVLY04Zs94V_zE643gAxuvMZulSKewjTHtDflr2tndT',
+          widthPx: 1112,
+          heightPx: 807,
+          authorAttributions: [
+            {
+              displayName: 'Arshan S',
+              uri: 'https://maps.google.com/maps/contrib/114878401574622602273',
+              photoUri: 'https://lh3.googleusercontent.com/a/ACg8ocIMM2yMLl4hp5F_ZLUP4eVGLut_Fb3uDdxrt534CXpw6Gwc66g=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/photos/AdCG2DMNoj_AguXHe868ameGUX4oCJJqt0jPk0pfP0AUelUYu8xm-quXzRsZnXOI29xTVgNiYb8G2YexAxClq1d227kbCcpJHMLC1RBTLRKfvdAbWvJTVWQOyI3iroi2wm3_XekW78gqYkKDSYMHYAKk60tN0aZ3hy42S6C2',
+          widthPx: 4000,
+          heightPx: 3000,
+          authorAttributions: [
+            {
+              displayName: 'Elmira Gharagozlou',
+              uri: 'https://maps.google.com/maps/contrib/111802498172332882114',
+              photoUri: 'https://lh3.googleusercontent.com/a/ACg8ocICvFHPJozB_G4GPSDJCbfLebVKHu9YKBmpWA0u2Bd-uuKdMQ=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/photos/AdCG2DMuYfUtYAZjUHiq7mLR0njd5ndlIO9znV-TsExcsQAQ6nVWxRrA2ZVb6XbD4UpPTZukQsM-xo5Yss6gIHb-etLk66QbjqbPd_gAbDbbW8_UDwSBIymDUqxThE6An9A9HLxXUl0cG9fOFg1xNipln2oZxmoNzuf50W2S',
+          widthPx: 4000,
+          heightPx: 2252,
+          authorAttributions: [
+            {
+              displayName: 'Jean-luc Pommereau',
+              uri: 'https://maps.google.com/maps/contrib/114981932153033340563',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWGJMhGd4tphBKhPJJh3QuvZCXSTXL0U2MYfNIa6hQxYqk7pjx_=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJmz2W_bwJxkcR9aW1XLdd9LU/photos/AdCG2DOto2TM9z6DGJKW3ed2SrrbioIg8YmEAxZRKZQ1hGGWB3wrpimbZJ6RSLELWdnBJGgoNk8ypD19MH2hxreTevr3sLpwutJFw19sCh0tp_X7Y-N0AkIp9iCnAru4cJrnb7r__aSb_tDq5xbvoPpDT1Hz49281z6NSV8N',
+          widthPx: 3600,
+          heightPx: 4800,
+          authorAttributions: [
+            {
+              displayName: 'Khaled Hakami',
+              uri: 'https://maps.google.com/maps/contrib/100618848294976043393',
+              photoUri: 'https://lh3.googleusercontent.com/a/ACg8ocLG4cz-7npkj-bnJarrinmnflDvv2-7Hs97tErPEnSNUd9rxA=s100-p-k-no-mo'
+            }
+          ]
+        }
+      ],
+      outdoorSeating: true,
+      liveMusic: false,
+      menuForChildren: true,
+      servesCocktails: true,
+      servesDessert: true,
+      servesCoffee: true,
+      goodForChildren: true,
+      restroom: true,
+      goodForGroups: true,
+      goodForWatchingSports: false,
+      paymentOptions: {
+        acceptsCreditCards: true,
+        acceptsDebitCards: true,
+        acceptsCashOnly: false,
+        acceptsNfc: true
+      },
+      parkingOptions: {
+        paidParkingLot: true,
+        paidStreetParking: true,
+        paidGarageParking: true
+      },
+      accessibilityOptions: {
+        wheelchairAccessibleParking: true,
+        wheelchairAccessibleEntrance: true,
+        wheelchairAccessibleRestroom: true,
+        wheelchairAccessibleSeating: true
+      },
+      addressDescriptor: {
+        landmarks: [
+          {
+            name: 'places/ChIJ2QCfBr0JxkcR5k6sIrPafLY',
+            placeId: 'ChIJ2QCfBr0JxkcR5k6sIrPafLY',
+            displayName: {
+              text: 'The Netherlands Film Academy',
+              languageCode: 'en'
+            },
+            types: [ 'establishment', 'point_of_interest', 'university' ],
+            spatialRelationship: 'ACROSS_THE_ROAD',
+            straightLineDistanceMeters: 42.51577,
+            travelDistanceMeters: 69.767685
+          },
+          {
+            name: 'places/ChIJMzKtC70JxkcRLL3Z3onUWAI',
+            placeId: 'ChIJMzKtC70JxkcRLL3Z3onUWAI',
+            displayName: {
+              text: 'Portuguese Synagogue of Amsterdam',
+              languageCode: 'en'
+            },
+            types: [
+              'establishment',
+              'place_of_worship',
+              'point_of_interest',
+              'synagogue',
+              'tourist_attraction'
+            ],
+            straightLineDistanceMeters: 137.80762,
+            travelDistanceMeters: 205.47554
+          },
+          {
+            name: 'places/ChIJuxgGCTQJxkcRS0SKvtLtiAc',
+            placeId: 'ChIJuxgGCTQJxkcRS0SKvtLtiAc',
+            displayName: { text: 'Q-Park Waterlooplein', languageCode: 'nl' },
+            types: [
+              'establishment',
+              'parking',
+              'point_of_interest',
+              'storage'
+            ],
+            straightLineDistanceMeters: 51.2903,
+            travelDistanceMeters: 90.105286
+          },
+          {
+            name: 'places/ChIJqxRzZuLhxUcRpgvqX1nIp1A',
+            placeId: 'ChIJqxRzZuLhxUcRpgvqX1nIp1A',
+            displayName: { text: 'Hortus Botanicus', languageCode: 'en' },
+            types: [
+              'establishment',
+              'park',
+              'point_of_interest',
+              'tourist_attraction'
+            ],
+            straightLineDistanceMeters: 264.44055,
+            travelDistanceMeters: 347.80972
+          },
+          {
+            name: 'places/ChIJpRPs5r0JxkcRUUIx22yPJX0',
+            placeId: 'ChIJpRPs5r0JxkcRUUIx22yPJX0',
+            displayName: { text: 'National Opera & Ballet', languageCode: 'en' },
+            types: [ 'establishment', 'point_of_interest' ],
+            straightLineDistanceMeters: 348.79514,
+            travelDistanceMeters: 313.89923
+          }
+        ],
+        areas: [
+          {
+            name: 'places/ChIJofmNs70JxkcRW3JX3kjkIrk',
+            placeId: 'ChIJofmNs70JxkcRW3JX3kjkIrk',
+            displayName: { text: 'Jodenbuurt', languageCode: 'en' },
+            containment: 'WITHIN'
+          },
+          {
+            name: 'places/ChIJV2ADLroJxkcR7vJohxnpu9k',
+            placeId: 'ChIJV2ADLroJxkcR7vJohxnpu9k',
+            displayName: { text: 'Nieuwmarkt en Lastage', languageCode: 'nl' },
+            containment: 'WITHIN'
+          },
+          {
+            name: 'places/ChIJ0-khaLsJxkcRm73OQ7Ahm9I',
+            placeId: 'ChIJ0-khaLsJxkcRm73OQ7Ahm9I',
+            displayName: { text: 'Amsterdam-Centrum', languageCode: 'nl' },
+            containment: 'WITHIN'
+          }
+        ]
+      }
+    },
+    {
+      name: 'places/ChIJj5kvVwALxkcRsTnAes0ENzg',
+      id: 'ChIJj5kvVwALxkcRsTnAes0ENzg',
+      types: [ 'restaurant', 'food', 'point_of_interest', 'establishment' ],
+      formattedAddress: 'Tuinbouwstraat 93, 1097 XT Amsterdam, Netherlands',
+      addressComponents: [
+        {
+          longText: '93',
+          shortText: '93',
+          types: [ 'street_number' ],
+          languageCode: 'en-US'
+        },
+        {
+          longText: 'Tuinbouwstraat',
+          shortText: 'Tuinbouwstraat',
+          types: [ 'route' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Amsterdam-Centrum',
+          shortText: 'Amsterdam-Centrum',
+          types: [ 'sublocality_level_1', 'sublocality', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Amsterdam',
+          shortText: 'Amsterdam',
+          types: [ 'locality', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Amsterdam',
+          shortText: 'Amsterdam',
+          types: [ 'administrative_area_level_2', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Noord-Holland',
+          shortText: 'NH',
+          types: [ 'administrative_area_level_1', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Netherlands',
+          shortText: 'NL',
+          types: [ 'country', 'political' ],
+          languageCode: 'en'
+        },
+        {
+          longText: '1097 XT',
+          shortText: '1097 XT',
+          types: [ 'postal_code' ],
+          languageCode: 'en-US'
+        }
+      ],
+      plusCode: {
+        globalCode: '9F469W93+2M',
+        compoundCode: '9W93+2M Amsterdam, Netherlands'
+      },
+      location: { latitude: 52.3675734, longitude: 4.9041388999999995 },
+      viewport: {
+        low: { latitude: 52.3662244197085, longitude: 4.902789919708498 },
+        high: { latitude: 52.3689223802915, longitude: 4.905487880291503 }
+      },
+      googleMapsUri: 'https://maps.google.com/?cid=4050711670417275313',
+      utcOffsetMinutes: 60,
+      adrFormatAddress: '<span class="street-address">Tuinbouwstraat 93</span>, <span class="postal-code">1097 XT</span> <span class="locality">Amsterdam</span>, <span class="country-name">Netherlands</span>',
+      businessStatus: 'OPERATIONAL',
+      iconMaskBaseUri: 'https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet',
+      iconBackgroundColor: '#FF9E67',
+      displayName: 'Berge opzoom',
+      primaryTypeDisplayName: 'Restaurant',
+      dineIn: true,
+      primaryType: 'restaurant',
+      shortFormattedAddress: 'Tuinbouwstraat 93, Amsterdam',
+      addressDescriptor: {
+        landmarks: [
+          {
+            name: 'places/ChIJMzKtC70JxkcRLL3Z3onUWAI',
+            placeId: 'ChIJMzKtC70JxkcRLL3Z3onUWAI',
+            displayName: {
+              text: 'Portuguese Synagogue of Amsterdam',
+              languageCode: 'en'
+            },
+            types: [
+              'establishment',
+              'place_of_worship',
+              'point_of_interest',
+              'synagogue',
+              'tourist_attraction'
+            ],
+            spatialRelationship: 'ACROSS_THE_ROAD',
+            straightLineDistanceMeters: 45.694286,
+            travelDistanceMeters: 2.6582103
+          },
+          {
+            name: 'places/ChIJo_CNmb0JxkcRfXyY9FDKtC4',
+            placeId: 'ChIJo_CNmb0JxkcRfXyY9FDKtC4',
+            displayName: { text: 'Jewish Museum', languageCode: 'en' },
+            types: [
+              'establishment',
+              'museum',
+              'place_of_worship',
+              'point_of_interest',
+              'synagogue',
+              'tourist_attraction'
+            ],
+            spatialRelationship: 'DOWN_THE_ROAD',
+            straightLineDistanceMeters: 55.173416,
+            travelDistanceMeters: 42.83277
+          },
+          {
+            name: 'places/ChIJ8TePmr0JxkcRCgs0GWqZkUQ',
+            placeId: 'ChIJ8TePmr0JxkcRCgs0GWqZkUQ',
+            displayName: { text: 'Jewish Cultural District', languageCode: 'en' },
+            types: [ 'establishment', 'point_of_interest' ],
+            spatialRelationship: 'DOWN_THE_ROAD',
+            straightLineDistanceMeters: 54.90831,
+            travelDistanceMeters: 45.647457
+          },
+          {
+            name: 'places/ChIJpRPs5r0JxkcRUUIx22yPJX0',
+            placeId: 'ChIJpRPs5r0JxkcRUUIx22yPJX0',
+            displayName: { text: 'National Opera & Ballet', languageCode: 'en' },
+            types: [ 'establishment', 'point_of_interest' ],
+            straightLineDistanceMeters: 220.1075,
+            travelDistanceMeters: 205.6546
+          },
+          {
+            name: 'places/ChIJb9Gxdr0JxkcRRK62b1BKMB0',
+            placeId: 'ChIJb9Gxdr0JxkcRRK62b1BKMB0',
+            displayName: {
+              text: 'The Dokwerker (Memories of the February strike)',
+              languageCode: 'en'
+            },
+            types: [
+              'establishment',
+              'point_of_interest',
+              'tourist_attraction'
+            ],
+            spatialRelationship: 'ACROSS_THE_ROAD',
+            straightLineDistanceMeters: 68.91457,
+            travelDistanceMeters: 2.662249
+          }
+        ],
+        areas: [
+          {
+            name: 'places/ChIJofmNs70JxkcRW3JX3kjkIrk',
+            placeId: 'ChIJofmNs70JxkcRW3JX3kjkIrk',
+            displayName: { text: 'Jodenbuurt', languageCode: 'en' },
+            containment: 'WITHIN'
+          },
+          {
+            name: 'places/ChIJV2ADLroJxkcR7vJohxnpu9k',
+            placeId: 'ChIJV2ADLroJxkcR7vJohxnpu9k',
+            displayName: { text: 'Nieuwmarkt en Lastage', languageCode: 'nl' },
+            containment: 'WITHIN'
+          },
+          {
+            name: 'places/ChIJ0-khaLsJxkcRm73OQ7Ahm9I',
+            placeId: 'ChIJ0-khaLsJxkcRm73OQ7Ahm9I',
+            displayName: { text: 'Amsterdam-Centrum', languageCode: 'nl' },
+            containment: 'WITHIN'
+          }
+        ]
+      },
+      priceLevel: null
+    },
+    {
+      name: 'places/ChIJ4a275mwJxkcR4w0suZZgu1w',
+      id: 'ChIJ4a275mwJxkcR4w0suZZgu1w',
+      types: [ 'bar', 'point_of_interest', 'establishment' ],
+      formattedAddress: '1011 PL Amsterdam, Netherlands',
+      addressComponents: [
+        {
+          longText: 'Amsterdam',
+          shortText: 'Amsterdam',
+          types: [ 'locality', 'political' ],
+          languageCode: 'en'
+        },
+        {
+          longText: 'Amsterdam-Centrum',
+          shortText: 'Amsterdam-Centrum',
+          types: [ 'sublocality_level_1', 'sublocality', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Government of Amsterdam',
+          shortText: 'Government of Amsterdam',
+          types: [ 'administrative_area_level_2', 'political' ],
+          languageCode: 'en'
+        },
+        {
+          longText: 'North Holland',
+          shortText: 'NH',
+          types: [ 'administrative_area_level_1', 'political' ],
+          languageCode: 'en'
+        },
+        {
+          longText: 'Netherlands',
+          shortText: 'NL',
+          types: [ 'country', 'political' ],
+          languageCode: 'en'
+        },
+        {
+          longText: '1011 PL',
+          shortText: '1011 PL',
+          types: [ 'postal_code' ],
+          languageCode: 'en-US'
+        }
+      ],
+      plusCode: {
+        globalCode: '9F469W93+2M',
+        compoundCode: '9W93+2M Amsterdam, Netherlands'
+      },
+      location: { latitude: 52.3675734, longitude: 4.9041388999999995 },
+      viewport: {
+        low: { latitude: 52.3662244197085, longitude: 4.902789919708498 },
+        high: { latitude: 52.3689223802915, longitude: 4.905487880291503 }
+      },
+      rating: 5,
+      googleMapsUri: 'https://maps.google.com/?cid=6682040672602295779',
+      utcOffsetMinutes: 60,
+      adrFormatAddress: '<span class="postal-code">1011 PL</span> <span class="locality">Amsterdam</span>, <span class="country-name">Netherlands</span>',
+      businessStatus: 'OPERATIONAL',
+      userRatingCount: 1,
+      iconMaskBaseUri: 'https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet',
+      iconBackgroundColor: '#FF9E67',
+      displayName: 'Delirium',
+      primaryTypeDisplayName: 'Bar',
+      delivery: false,
+      dineIn: true,
+      servesBeer: true,
+      servesWine: true,
+      primaryType: 'bar',
+      shortFormattedAddress: 'Amsterdam',
+      reviews: [
+        {
+          name: 'places/ChIJ4a275mwJxkcR4w0suZZgu1w/reviews/ChdDSUhNMG9nS0VJQ0FnSUNUdHJfQjJ3RRAB',
+          relativePublishTimeDescription: '5 months ago',
+          rating: 5,
+          authorAttribution: {
+            displayName: 'hatem abdalla',
+            uri: 'https://www.google.com/maps/contrib/114414657435735819631/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjXbijg-jMu0zv7hKLmFytbd7W_JL49Ax2WRTIEADPNaJYMcu_gc=s128-c0x00000000-cc-rp-mo'
+          },
+          publishTime: '2024-05-14T15:36:28.132817Z'
+        }
+      ],
+      restroom: true,
+      goodForGroups: true,
+      addressDescriptor: {
+        landmarks: [
+          {
+            name: 'places/ChIJMzKtC70JxkcRLL3Z3onUWAI',
+            placeId: 'ChIJMzKtC70JxkcRLL3Z3onUWAI',
+            displayName: {
+              text: 'Portuguese Synagogue of Amsterdam',
+              languageCode: 'en'
+            },
+            types: [
+              'establishment',
+              'place_of_worship',
+              'point_of_interest',
+              'synagogue',
+              'tourist_attraction'
+            ],
+            spatialRelationship: 'ACROSS_THE_ROAD',
+            straightLineDistanceMeters: 45.694286,
+            travelDistanceMeters: 2.6582103
+          },
+          {
+            name: 'places/ChIJo_CNmb0JxkcRfXyY9FDKtC4',
+            placeId: 'ChIJo_CNmb0JxkcRfXyY9FDKtC4',
+            displayName: { text: 'Jewish Museum', languageCode: 'en' },
+            types: [
+              'establishment',
+              'museum',
+              'place_of_worship',
+              'point_of_interest',
+              'synagogue',
+              'tourist_attraction'
+            ],
+            spatialRelationship: 'DOWN_THE_ROAD',
+            straightLineDistanceMeters: 55.173416,
+            travelDistanceMeters: 42.83277
+          },
+          {
+            name: 'places/ChIJ8TePmr0JxkcRCgs0GWqZkUQ',
+            placeId: 'ChIJ8TePmr0JxkcRCgs0GWqZkUQ',
+            displayName: { text: 'Jewish Cultural District', languageCode: 'en' },
+            types: [ 'establishment', 'point_of_interest' ],
+            spatialRelationship: 'DOWN_THE_ROAD',
+            straightLineDistanceMeters: 54.90831,
+            travelDistanceMeters: 45.647457
+          },
+          {
+            name: 'places/ChIJpRPs5r0JxkcRUUIx22yPJX0',
+            placeId: 'ChIJpRPs5r0JxkcRUUIx22yPJX0',
+            displayName: { text: 'National Opera & Ballet', languageCode: 'en' },
+            types: [ 'establishment', 'point_of_interest' ],
+            straightLineDistanceMeters: 220.1075,
+            travelDistanceMeters: 205.6546
+          },
+          {
+            name: 'places/ChIJb9Gxdr0JxkcRRK62b1BKMB0',
+            placeId: 'ChIJb9Gxdr0JxkcRRK62b1BKMB0',
+            displayName: {
+              text: 'The Dokwerker (Memories of the February strike)',
+              languageCode: 'en'
+            },
+            types: [
+              'establishment',
+              'point_of_interest',
+              'tourist_attraction'
+            ],
+            spatialRelationship: 'ACROSS_THE_ROAD',
+            straightLineDistanceMeters: 68.91457,
+            travelDistanceMeters: 2.662249
+          }
+        ],
+        areas: [
+          {
+            name: 'places/ChIJofmNs70JxkcRW3JX3kjkIrk',
+            placeId: 'ChIJofmNs70JxkcRW3JX3kjkIrk',
+            displayName: { text: 'Jodenbuurt', languageCode: 'en' },
+            containment: 'WITHIN'
+          },
+          {
+            name: 'places/ChIJV2ADLroJxkcR7vJohxnpu9k',
+            placeId: 'ChIJV2ADLroJxkcR7vJohxnpu9k',
+            displayName: { text: 'Nieuwmarkt en Lastage', languageCode: 'nl' },
+            containment: 'WITHIN'
+          },
+          {
+            name: 'places/ChIJ0-khaLsJxkcRm73OQ7Ahm9I',
+            placeId: 'ChIJ0-khaLsJxkcRm73OQ7Ahm9I',
+            displayName: { text: 'Amsterdam-Centrum', languageCode: 'nl' },
+            containment: 'WITHIN'
+          }
+        ]
+      },
+      priceLevel: null
+    },
+    {
+      name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE',
+      id: 'ChIJOUB4A_IJxkcRqD_Ui8S7kiE',
+      types: [ 'restaurant', 'food', 'point_of_interest', 'establishment' ],
+      formattedAddress: '1011 PL Amsterdam, Netherlands',
+      addressComponents: [
+        {
+          longText: 'Amsterdam',
+          shortText: 'Amsterdam',
+          types: [ 'locality', 'political' ],
+          languageCode: 'en'
+        },
+        {
+          longText: 'Amsterdam-Centrum',
+          shortText: 'Amsterdam-Centrum',
+          types: [ 'sublocality_level_1', 'sublocality', 'political' ],
+          languageCode: 'nl'
+        },
+        {
+          longText: 'Government of Amsterdam',
+          shortText: 'Government of Amsterdam',
+          types: [ 'administrative_area_level_2', 'political' ],
+          languageCode: 'en'
+        },
+        {
+          longText: 'North Holland',
+          shortText: 'NH',
+          types: [ 'administrative_area_level_1', 'political' ],
+          languageCode: 'en'
+        },
+        {
+          longText: 'Netherlands',
+          shortText: 'NL',
+          types: [ 'country', 'political' ],
+          languageCode: 'en'
+        },
+        {
+          longText: '1011 PL',
+          shortText: '1011 PL',
+          types: [ 'postal_code' ],
+          languageCode: 'en-US'
+        }
+      ],
+      plusCode: {
+        globalCode: '9F469W93+2M',
+        compoundCode: '9W93+2M Amsterdam, Netherlands'
+      },
+      location: { latitude: 52.3675734, longitude: 4.9041388999999995 },
+      viewport: {
+        low: { latitude: 52.3662244197085, longitude: 4.902789919708498 },
+        high: { latitude: 52.3689223802915, longitude: 4.905487880291503 }
+      },
+      rating: 5,
+      googleMapsUri: 'https://maps.google.com/?cid=2419202402685304744',
+      utcOffsetMinutes: 60,
+      adrFormatAddress: '<span class="postal-code">1011 PL</span> <span class="locality">Amsterdam</span>, <span class="country-name">Netherlands</span>',
+      businessStatus: 'OPERATIONAL',
+      userRatingCount: 1,
+      iconMaskBaseUri: 'https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet',
+      iconBackgroundColor: '#FF9E67',
+      displayName: 'Nipss93food',
+      primaryTypeDisplayName: 'Restaurant',
+      dineIn: true,
+      primaryType: 'restaurant',
+      shortFormattedAddress: 'Amsterdam',
+      reviews: [
+        {
+          name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE/reviews/ChZDSUhNMG9nS0VJQ0FnSUNGcVp6Y0N3EAE',
+          relativePublishTimeDescription: '12 months ago',
+          rating: 5,
+          authorAttribution: {
+            displayName: 'Nipss-organisme Traiteur',
+            uri: 'https://www.google.com/maps/contrib/108200304893236151107/reviews',
+            photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWFVcLrf9hYTTKk79jeIlbBxX96eNfYECJE8X9oSPyTEQ4f-onZ=s128-c0x00000000-cc-rp-mo-ba5'
+          },
+          publishTime: '2023-11-02T14:25:40.740236Z'
+        }
+      ],
+      photos: [
+        {
+          name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE/photos/AdCG2DMlXFEV_CBDaWth_-Eg-whuaMZDJhw610NnzQk5f4fo9lETT0bD27d4Amh3c4ybMwVou-Z0d02_bT1Y5Q9qyeHu7nTqnZFzYjqg-eF3uPkFiYVr1bD0mZ_q989_7Vr1PFIbdW9E4A-6d8khWx14dQWY1yKVYwo1Gdul',
+          widthPx: 3024,
+          heightPx: 4032,
+          authorAttributions: [
+            {
+              displayName: 'Nipss-organisme Traiteur',
+              uri: 'https://maps.google.com/maps/contrib/108200304893236151107',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWFVcLrf9hYTTKk79jeIlbBxX96eNfYECJE8X9oSPyTEQ4f-onZ=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE/photos/AdCG2DPQ5V1NKtcSKrOoIFBKsGSeBjpxHExRjIep9zarfNCxuumfjU0LBZUNoZoGioE2agcf6C105Q5aopsUlT2jECVqg0uUGNWYYfn5F85kkV3FavX6ZEafuUDWJuIMARXKg07mB6IQs06TKolX823QIS0LKA86RjBHdjbJ',
+          widthPx: 3024,
+          heightPx: 4032,
+          authorAttributions: [
+            {
+              displayName: 'Nipss-organisme Traiteur',
+              uri: 'https://maps.google.com/maps/contrib/108200304893236151107',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWFVcLrf9hYTTKk79jeIlbBxX96eNfYECJE8X9oSPyTEQ4f-onZ=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE/photos/AdCG2DNbiPpf8_jqRLuRvej33Yxekx7Ipclm9wvsyiDu4iY_urmm0_4p_BUygmSCjybk8YzgqvUu1FrL6cszEaY8tjyBpJjL0U502GmOJQedKqGd1eRYvcNvpNwnI4uq-Yhnt1of1_m5Vgg2IFd2TzpWfBUJ4B7yfayjbZz2',
+          widthPx: 3024,
+          heightPx: 3024,
+          authorAttributions: [
+            {
+              displayName: 'Nipss-organisme Traiteur',
+              uri: 'https://maps.google.com/maps/contrib/108200304893236151107',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWFVcLrf9hYTTKk79jeIlbBxX96eNfYECJE8X9oSPyTEQ4f-onZ=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE/photos/AdCG2DMOBDSKf1z0_sx232LEdqWTvYUsfL_ZTdTabMj1FnEu3twQUOPqUmctMGsu56jVx_FUEFI81cl6HnuUo_ha08m6zScZWFRiFAnt6UBWI4uMCu-5i6DqTRbtTDGkdl4GI6qpNos5npwWeb1pFnmVuA7zsnU97_CUd1Ww',
+          widthPx: 3024,
+          heightPx: 4032,
+          authorAttributions: [
+            {
+              displayName: 'Nipss-organisme Traiteur',
+              uri: 'https://maps.google.com/maps/contrib/108200304893236151107',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWFVcLrf9hYTTKk79jeIlbBxX96eNfYECJE8X9oSPyTEQ4f-onZ=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE/photos/AdCG2DMRFX5GiNFYvgyu5PBK6ESUK2QPsZgR1APkPiobGySUnVLn_S_uKg1HkHL-9wZ6fUQqwIy9UDlalFVNEmxFo7U8X-0xj8nns9DEgpEO6ek_D_LArfzxbC-5_8eCvNYRwS07FlPt8yQL1G7UifdRv_yTyqVCdol5MTAJ',
+          widthPx: 2524,
+          heightPx: 2524,
+          authorAttributions: [
+            {
+              displayName: 'Nipss-organisme Traiteur',
+              uri: 'https://maps.google.com/maps/contrib/108200304893236151107',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWFVcLrf9hYTTKk79jeIlbBxX96eNfYECJE8X9oSPyTEQ4f-onZ=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE/photos/AdCG2DPMtVEupOUgYsPVwQU8bN_IKdSbEhk89T9xc7sOoLb0ZDUB2BxTDsq3-iktRbSfbOOYfe-tp7BypLvm-nN6Qe28opOGE8594sNS7Php2NPWZrJn9ciQVUHGYO_MShQh6OWP3rivITKgqqGYASSQK4Km8f-6rZ2oZEJb',
+          widthPx: 2891,
+          heightPx: 2891,
+          authorAttributions: [
+            {
+              displayName: 'Nipss-organisme Traiteur',
+              uri: 'https://maps.google.com/maps/contrib/108200304893236151107',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWFVcLrf9hYTTKk79jeIlbBxX96eNfYECJE8X9oSPyTEQ4f-onZ=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE/photos/AdCG2DPHLSFYc_KiPw7Yo8GXfVeAl62vkNRwAOozeadhhjYXiOMn0lTp8TtvgS0vZwWE4xLjflVyG81kAiHlbAe-l0opCZT6j3ta_IUTLW_2OQ3-rVVqE8Swqazb5K_55lUTSLRHhRyTnHJb1mMTo0aT-c1BiQdEg8J13ik9',
+          widthPx: 1080,
+          heightPx: 1080,
+          authorAttributions: [
+            {
+              displayName: 'Nipss-organisme Traiteur',
+              uri: 'https://maps.google.com/maps/contrib/108200304893236151107',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWFVcLrf9hYTTKk79jeIlbBxX96eNfYECJE8X9oSPyTEQ4f-onZ=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE/photos/AdCG2DM7_w7bYICtASnkqQvalFb3eTWzTxgA4eYJdLt5tz33vn8FvxddR1ZbW-WoUYAX2t_Anr5KFk8VGAxcY2vA-ftkMkdTQJ6IT01_a4y0G9X3cTQAFNnqgtub1YeYttuv-d3kxUI-Q0WPGf5LPiZeD7i94laBGpkK1tq9',
+          widthPx: 1080,
+          heightPx: 1920,
+          authorAttributions: [
+            {
+              displayName: 'Nipss-organisme Traiteur',
+              uri: 'https://maps.google.com/maps/contrib/108200304893236151107',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWFVcLrf9hYTTKk79jeIlbBxX96eNfYECJE8X9oSPyTEQ4f-onZ=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE/photos/AdCG2DON6VFIAok6MxErVLsdtsOLazjCe1-hph4wP-n6CUZ5dNdvEwE6VNGApzZg6pM3BF_Rqr8-A-YVf8_Ev9A4tzfL-TMUB_OO-IGYKnRzplzFbqbCofxPTICEibbOlVSxxKDvHHWBcuwCxwpXmKhp0ttAqp3NWNaVfrB8',
+          widthPx: 2160,
+          heightPx: 2160,
+          authorAttributions: [
+            {
+              displayName: 'Nipss-organisme Traiteur',
+              uri: 'https://maps.google.com/maps/contrib/108200304893236151107',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWFVcLrf9hYTTKk79jeIlbBxX96eNfYECJE8X9oSPyTEQ4f-onZ=s100-p-k-no-mo'
+            }
+          ]
+        },
+        {
+          name: 'places/ChIJOUB4A_IJxkcRqD_Ui8S7kiE/photos/AdCG2DMUUoSJX3RBq5TfN4F_EVZ0Fic9llwTQEdCdCLAQ-6aPt-qJyBC7zuHzvN88Vzf6S-LYtWHd5gWnCUpnNKao3bWaccC-S1nOeYkeG9tlJwNQj2PXyMmBvDP467DVuzoxdIvAdMn0-Zq-fJ1KQV8jRvazZCac5GFnAC3',
+          widthPx: 3024,
+          heightPx: 4032,
+          authorAttributions: [
+            {
+              displayName: 'Nipss-organisme Traiteur',
+              uri: 'https://maps.google.com/maps/contrib/108200304893236151107',
+              photoUri: 'https://lh3.googleusercontent.com/a-/ALV-UjWFVcLrf9hYTTKk79jeIlbBxX96eNfYECJE8X9oSPyTEQ4f-onZ=s100-p-k-no-mo'
+            }
+          ]
+        }
+      ],
+      liveMusic: false,
+      servesCoffee: true,
+      restroom: true,
+      goodForGroups: true,
+      addressDescriptor: {
+        landmarks: [
+          {
+            name: 'places/ChIJMzKtC70JxkcRLL3Z3onUWAI',
+            placeId: 'ChIJMzKtC70JxkcRLL3Z3onUWAI',
+            displayName: {
+              text: 'Portuguese Synagogue of Amsterdam',
+              languageCode: 'en'
+            },
+            types: [
+              'establishment',
+              'place_of_worship',
+              'point_of_interest',
+              'synagogue',
+              'tourist_attraction'
+            ],
+            spatialRelationship: 'ACROSS_THE_ROAD',
+            straightLineDistanceMeters: 45.694286,
+            travelDistanceMeters: 2.6582103
+          },
+          {
+            name: 'places/ChIJo_CNmb0JxkcRfXyY9FDKtC4',
+            placeId: 'ChIJo_CNmb0JxkcRfXyY9FDKtC4',
+            displayName: { text: 'Jewish Museum', languageCode: 'en' },
+            types: [
+              'establishment',
+              'museum',
+              'place_of_worship',
+              'point_of_interest',
+              'synagogue',
+              'tourist_attraction'
+            ],
+            spatialRelationship: 'DOWN_THE_ROAD',
+            straightLineDistanceMeters: 55.173416,
+            travelDistanceMeters: 42.83277
+          },
+          {
+            name: 'places/ChIJ8TePmr0JxkcRCgs0GWqZkUQ',
+            placeId: 'ChIJ8TePmr0JxkcRCgs0GWqZkUQ',
+            displayName: { text: 'Jewish Cultural District', languageCode: 'en' },
+            types: [ 'establishment', 'point_of_interest' ],
+            spatialRelationship: 'DOWN_THE_ROAD',
+            straightLineDistanceMeters: 54.90831,
+            travelDistanceMeters: 45.647457
+          },
+          {
+            name: 'places/ChIJpRPs5r0JxkcRUUIx22yPJX0',
+            placeId: 'ChIJpRPs5r0JxkcRUUIx22yPJX0',
+            displayName: { text: 'National Opera & Ballet', languageCode: 'en' },
+            types: [ 'establishment', 'point_of_interest' ],
+            straightLineDistanceMeters: 220.1075,
+            travelDistanceMeters: 205.6546
+          },
+          {
+            name: 'places/ChIJb9Gxdr0JxkcRRK62b1BKMB0',
+            placeId: 'ChIJb9Gxdr0JxkcRRK62b1BKMB0',
+            displayName: {
+              text: 'The Dokwerker (Memories of the February strike)',
+              languageCode: 'en'
+            },
+            types: [
+              'establishment',
+              'point_of_interest',
+              'tourist_attraction'
+            ],
+            spatialRelationship: 'ACROSS_THE_ROAD',
+            straightLineDistanceMeters: 68.91457,
+            travelDistanceMeters: 2.662249
+          }
+        ],
+        areas: [
+          {
+            name: 'places/ChIJofmNs70JxkcRW3JX3kjkIrk',
+            placeId: 'ChIJofmNs70JxkcRW3JX3kjkIrk',
+            displayName: { text: 'Jodenbuurt', languageCode: 'en' },
+            containment: 'WITHIN'
+          },
+          {
+            name: 'places/ChIJV2ADLroJxkcR7vJohxnpu9k',
+            placeId: 'ChIJV2ADLroJxkcR7vJohxnpu9k',
+            displayName: { text: 'Nieuwmarkt en Lastage', languageCode: 'nl' },
+            containment: 'WITHIN'
+          },
+          {
+            name: 'places/ChIJ0-khaLsJxkcRm73OQ7Ahm9I',
+            placeId: 'ChIJ0-khaLsJxkcRm73OQ7Ahm9I',
+            displayName: { text: 'Amsterdam-Centrum', languageCode: 'nl' },
+            containment: 'WITHIN'
+          }
+        ]
+      },
+      priceLevel: null
+    }
+  ]
+}

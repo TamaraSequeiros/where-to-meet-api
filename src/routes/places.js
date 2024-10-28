@@ -13,10 +13,13 @@ router.post('/:nearby', async function(req, res) {
 });
 
 async function get_places(lat, lng) {
-    const placesFoundNearby = await gm_places.get_nearby_places(lat, lng, 10);
+    const placesFoundNearby = await gm_places.get_nearby_places(lat, lng, 20); // max 20
     let venues = [];
     for (place of placesFoundNearby.places) {
         if (place.businessStatus.startsWith('CLOSED')) {
+            continue;
+        }
+        if (!place.userRatingCount || place.userRatingCount < 10) {
             continue;
         }
         if (venues.length > 4) {
