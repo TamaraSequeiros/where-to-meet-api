@@ -29,13 +29,19 @@ async function get_places(lat, lng) {
         if (place.primaryTypeDisplayName) {
             place.primaryTypeDisplayName = place.primaryTypeDisplayName.text;
         }
+        if (place.location) {
+            place.location = {
+                lat: place.location.latitude,
+                lng: place.location.longitude
+            };
+        }
         representPriceLevel(place);
         venues.push(place);
     }
     const response = { places: venues };
     console.dir( response, { depth: null });
     return response;
- }
+}
 
 function representPriceLevel(place) {
     switch (place.priceLevel) {
