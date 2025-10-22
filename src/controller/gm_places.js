@@ -1,9 +1,12 @@
 const http_util = require('../util/http_util');
 
-const options = {
-    url: 'https://places.googleapis.com/v1/places:searchNearby',
-    method: 'POST',
-    headers: {
+const base_URL = 'https://places.googleapis.com/v1/places:'
+
+const get_nearby_places = async (lat, lng, maxCount) => {
+    const options = {}
+    options.url = base_URL + 'searchNearby',
+    options.method = 'POST',
+    options.headers = {
         'Content-Type': 'application/json',
         'X-Goog-FieldMask': 'places.displayName.text,' +
                             'places.formattedAddress,' +
@@ -21,9 +24,6 @@ const options = {
                             'places.userRatingCount',
         'X-Goog-Api-Key': process.env.GOOGLE_API_KEY
     }
-};
-
-const get_nearby_places = async (lat, lng, maxCount) => {
     options.data = {
         includedPrimaryTypes: [ "restaurant", "bar" ],
         // excludedPrimaryTypes: [],
@@ -35,7 +35,7 @@ const get_nearby_places = async (lat, lng, maxCount) => {
                     latitude: lat,
                     longitude: lng
                 },
-                radius: 1000.0
+                radius: 1000.0 // meters
             }
         }
     }
@@ -43,4 +43,30 @@ const get_nearby_places = async (lat, lng, maxCount) => {
     return response.data;
 };
 
+const complete_address = async(address_string, lat, lng) => {
+    const options = {}
+    options.url = base_URL + 'autocomplete';
+    options.method = 'POST';
+    options.headers = {
+        'Content-Type': 'application/json',
+        'X-Goog-FieldMask': 'suggestions.placePrediction.text.text',
+        'X-Goog-Api-Key': process.env.GOOGLE_API_KEY
+    }
+    options.data = {
+        input: address_string,
+        locationBias: {
+            circle: {
+              center: {
+                latitude: lat,
+                longitude: lng
+              },
+              radius: 1000.0 // meters
+            }
+        }
+    }
+    const response = await http_util.call(options);
+    return response.data;
+}
+
 exports.get_nearby_places = get_nearby_places;
+exports.complete_address = complete_address;

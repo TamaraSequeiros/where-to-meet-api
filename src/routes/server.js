@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const where = require('./where');
 const places = require('./places');
+const address = require('./address');
 
 const app = express();
 const PORT = 3000;
@@ -18,5 +19,6 @@ app.use(express.json());
 app.use(cors()) 
 app.use('/where', where);
 app.use('/places', places);
+app.use('/address', address);
 
 app.listen(PORT);
