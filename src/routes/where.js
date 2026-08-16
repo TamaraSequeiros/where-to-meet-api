@@ -4,53 +4,71 @@ const gm_geocoding = require('../controller/gm_geocoding');
 
 const router = express.Router();
 
+class AppError extends Error {
+   constructor(message, status = 500) {
+      super(message);
+      this.status = status;
+   }
+}
+
 router.post('/:middle', async function(req, res) {
-   
-   const locations = await find_coordinates(req.body);
-   console.log('Requested locations: ' + JSON.stringify(locations), ', with method: ' + req.body.method);
-   if (locations.hasError) {
-      return locations.errorMessage;
+   try {
+      const locations = await find_coordinates(req.body);
+      console.log('Requested locations: ' + JSON.stringify(locations) + ', with method: ' + req.body.method);
+
+      const middle_point = await calculate_middle(req.body.method, locations[0], locations[1]);
+      console.log('Calculated middle point: ' + JSON.stringify(middle_point));
+
+      res.json({ middle_point });
+   } catch (error) {
+      console.error(error);
+      res.status(error.status || 500).json({ error: error.message || 'Unable to calculate middle point' });
    }
-   const middle_point = await calculate_middle(req.body.method, locations[0], locations[1]);
-   console.log('Calculated middle point: ' + JSON.stringify(middle_point));
-   const response = {
-      'middle_point' : middle_point
-   }
-   res.send(response);
 });
 
 async function find_coordinates(reqBody) {
    if (reqBody.locations) {
+      if (!Array.isArray(reqBody.locations) || reqBody.locations.length !== 2) {
+         throw new AppError('Expected exactly two locations', 400);
+      }
       return reqBody.locations;
-   
+
    } else if (reqBody.addresses) {
-      let coord1 = await gm_geocoding.get_coordinates(reqBody.addresses[0]);
-      let coord2 = await gm_geocoding.get_coordinates(reqBody.addresses[1]);
+      if (!Array.isArray(reqBody.addresses) || reqBody.addresses.length !== 2) {
+         throw new AppError('Expected exactly two addresses', 400);
+      }
+      const [coord1, coord2] = await Promise.all([
+         gm_geocoding.get_coordinates(reqBody.addresses[0]),
+         gm_geocoding.get_coordinates(reqBody.addresses[1])
+      ]);
+      [coord1, coord2].forEach((coord, i) => {
+         if (coord.hasError) {
+            throw new AppError(`Could not geocode address ${i + 1}: "${reqBody.addresses[i]}"`, 422);
+         }
+      });
       return [coord1, coord2];
-   
+
    } else {
-      throw new Error('Missing input: locations or addresses');
+      throw new AppError('Missing input: locations or addresses', 400);
    }
 }
 
-function calculate_middle(method, origin, destination) {
+async function calculate_middle(method, origin, destination) {
    if (method === 'geographical') {
-      const avg_lat = (origin.lat + destination.lat) / 2;
-      const avg_lng = (origin.lng + destination.lng) / 2;
-      return {'lat': avg_lat, 'lng': avg_lng};
-   
+      return {
+         lat: (origin.lat + destination.lat) / 2,
+         lng: (origin.lng + destination.lng) / 2
+      };
+
    } else if (method === 'route') {
-      let middle_coord; 
       try {
-         middle_coord = gm_routes.calculate_middle(origin, destination);
+         return await gm_routes.calculate_middle(origin, destination);
       } catch (error) {
-         console.log(error);
-         return 'Center point not found';
+         throw new AppError(error.message || 'Unable to calculate route-based middle point', 502);
       }
-      return middle_coord;
-   
+
    } else {
-      throw new Error('Method ' + method + ' not supported');
+      throw new AppError(`Method ${method} not supported`, 400);
    }
 }
 

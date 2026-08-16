@@ -20,7 +20,7 @@ test('Mock post success', async() => {
         }
     };
 
-    const response = await http_util.post(options);
+    const response = await http_util.call(options);
     expect(response.data).toEqual(json);
 });
 
@@ -38,7 +38,7 @@ test('Mock post error', async() => {
         }
     };
 
-    const response = await http_util.post(options);
+    const response = await http_util.call(options);
     expect(response.hasError).toBe(true);
     expect(response.status).toEqual(400);
     expect(response.code).toEqual('ERR_BAD_REQUEST');
