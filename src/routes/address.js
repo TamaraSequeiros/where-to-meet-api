@@ -5,6 +5,9 @@ const router = express.Router();
 
 router.post('/:complete', async function(req, res) {
     const address_string = req.body.address_string;
+    if (address_string.length < 3) {
+        throw new Error('Minimum of 3 characters required');
+    }
     const lat = req.body.lat;
     const lng = req.body.lng;
 
