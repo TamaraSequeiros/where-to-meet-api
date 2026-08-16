@@ -40,6 +40,10 @@ const get_nearby_places = async (lat, lng, maxCount) => {
         }
     }
     const response = await http_util.call(options);
+    if (response.hasError) {
+        console.dir(response, { depth: null });
+        throw new Error('Error retrieving nearby places');
+    }
     return response.data;
 };
 
@@ -65,6 +69,10 @@ const complete_address = async(address_string, lat, lng) => {
         }
     }
     const response = await http_util.call(options);
+    if (response.hasError) {
+        console.dir(response, { depth: null });
+        throw new Error('Error retrieving address suggestions');
+    }
     return response.data;
 }
 

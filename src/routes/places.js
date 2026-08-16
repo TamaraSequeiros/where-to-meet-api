@@ -4,19 +4,25 @@ const gm_places = require('../controller/gm_places');
 const router = express.Router();
 
 router.post('/:nearby', async function(req, res) {
-    const lat = req.body.lat;
-    const lng = req.body.lng;
+    try {
+        const { lat, lng } = req.body;
+        if (typeof lat !== 'number' || typeof lng !== 'number') {
+            return res.status(400).json({ error: 'lat and lng are required and must be numbers' });
+        }
 
-    const places = await get_places(lat, lng);
-
-    res.send(places);
+        const places = await get_places(lat, lng);
+        res.json(places);
+    } catch (error) {
+        console.error(error);
+        res.status(error.status || 500).json({ error: error.message || 'Unable to fetch nearby places' });
+    }
 });
 
 async function get_places(lat, lng) {
     const placesFoundNearby = await gm_places.get_nearby_places(lat, lng, 20); // max 20
     let venues = [];
-    for (place of placesFoundNearby.places) {
-        if (place.businessStatus.startsWith('CLOSED')) {
+    for (const place of placesFoundNearby.places) {
+        if (place.businessStatus && place.businessStatus.startsWith('CLOSED')) {
             continue;
         }
         if (!place.userRatingCount || place.userRatingCount < 10) {
