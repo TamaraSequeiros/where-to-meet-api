@@ -57,14 +57,16 @@ const complete_address = async(address_string, lat, lng) => {
         'X-Goog-Api-Key': process.env.GOOGLE_API_KEY
     }
     options.data = {
-        input: address_string,
-        locationBias: {
+        input: address_string
+    }
+    if (typeof lat === 'number' && typeof lng === 'number') {
+        options.data.locationBias = {
             circle: {
-              center: {
-                latitude: lat,
-                longitude: lng
-              },
-              radius: 1000.0 // meters
+                center: {
+                    latitude: lat,
+                    longitude: lng
+                },
+                radius: 1000.0 // meters
             }
         }
     }

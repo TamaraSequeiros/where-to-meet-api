@@ -46,3 +46,31 @@ test('complete_address throws on upstream error', async () => {
     await expect(gm_places.complete_address('Dam Squ', 52.377, 4.891))
         .rejects.toThrow('Error retrieving address suggestions');
 });
+
+test('complete_address omits locationBias when lat/lng are not provided', async () => {
+    const json = { suggestions: [] };
+    let capturedBody;
+
+    nock(HOST).post(AUTOCOMPLETE_PATH, (body) => {
+        capturedBody = body;
+        return true;
+    }).reply(200, json);
+
+    await gm_places.complete_address('Dam Squ', undefined, undefined);
+    expect(capturedBody).toEqual({ input: 'Dam Squ' });
+});
+
+test('complete_address includes locationBias when lat/lng are provided', async () => {
+    const json = { suggestions: [] };
+    let capturedBody;
+
+    nock(HOST).post(AUTOCOMPLETE_PATH, (body) => {
+        capturedBody = body;
+        return true;
+    }).reply(200, json);
+
+    await gm_places.complete_address('Dam Squ', 52.377, 4.891);
+    expect(capturedBody.locationBias).toEqual({
+        circle: { center: { latitude: 52.377, longitude: 4.891 }, radius: 1000.0 }
+    });
+});
