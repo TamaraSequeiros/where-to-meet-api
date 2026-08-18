@@ -8,7 +8,8 @@ const get_nearby_places = async (lat, lng, maxCount) => {
     options.method = 'POST',
     options.headers = {
         'Content-Type': 'application/json',
-        'X-Goog-FieldMask': 'places.displayName.text,' +
+        'X-Goog-FieldMask': 'places.id,' +
+                            'places.displayName.text,' +
                             'places.formattedAddress,' +
                             'places.googleMapsUri,' +
                             'places.rating,' +
