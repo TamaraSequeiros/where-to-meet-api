@@ -69,3 +69,25 @@ test('Mock post success with a body-level error_message (e.g. REQUEST_DENIED) is
     expect(response.status).toEqual(200);
     expect(response.message).toEqual('The provided API key is invalid.');
 });
+
+test('Mock connection-level failure (no HTTP response at all)', async() => {
+    // Unlike a 4xx/5xx reply, a connection failure never gets an
+    // error.response, so error_data must stay unset -- a different branch
+    // of the catch block than "Mock post error" above exercises.
+    nock(HOST).post(PATH)
+    .replyWithError({ message: 'connect ECONNREFUSED', code: 'ECONNREFUSED' });
+
+    const options = {
+        url: HOST + PATH,
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    };
+
+    const response = await http_util.call(options);
+    expect(response.hasError).toBe(true);
+    expect(response.code).toEqual('ECONNREFUSED');
+    expect(response.message).toEqual('connect ECONNREFUSED');
+    expect(response.error_data).toBeUndefined();
+});
