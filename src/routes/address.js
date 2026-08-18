@@ -1,5 +1,6 @@
 const express = require('express');
 const gm_complete = require('../controller/gm_places');
+const debug = require('../util/debug_log');
 
 const router = express.Router();
 
@@ -30,7 +31,7 @@ async function get_suggestions(address_string, lat, lng) {
     }
 
     const response = { suggestions: addresses };
-    console.dir( response, { depth: null });
+    debug.dir(response, { depth: null });
     return response;
 }
 

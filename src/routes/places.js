@@ -1,5 +1,6 @@
 const express = require('express');
 const gm_places = require('../controller/gm_places');
+const debug = require('../util/debug_log');
 
 const router = express.Router();
 
@@ -45,7 +46,7 @@ async function get_places(lat, lng) {
         venues.push(place);
     }
     const response = { places: venues };
-    console.dir( response, { depth: null });
+    debug.dir(response, { depth: null });
     return response;
 }
 

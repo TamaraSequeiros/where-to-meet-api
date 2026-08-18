@@ -1,6 +1,7 @@
 const express = require('express');
 const gm_routes = require('../controller/gm_routes');
 const gm_geocoding = require('../controller/gm_geocoding');
+const debug = require('../util/debug_log');
 
 const router = express.Router();
 
@@ -14,10 +15,10 @@ class AppError extends Error {
 router.post('/:middle', async function(req, res) {
    try {
       const locations = await find_coordinates(req.body);
-      console.log('Requested locations: ' + JSON.stringify(locations) + ', with method: ' + req.body.method);
+      debug.log('Requested locations: ' + JSON.stringify(locations) + ', with method: ' + req.body.method);
 
       const middle_point = await calculate_middle(req.body.method, locations[0], locations[1]);
-      console.log('Calculated middle point: ' + JSON.stringify(middle_point));
+      debug.log('Calculated middle point: ' + JSON.stringify(middle_point));
 
       res.json({ middle_point });
    } catch (error) {
