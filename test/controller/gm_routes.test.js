@@ -44,3 +44,19 @@ test('Process route1 to return coordinates', async () => {
 test('Process route with no routes throws', async () => {
     expect(() => gm_routes.process_route({ routes: [] })).toThrow('No bicycle route found between these locations');
 });
+
+test('Process route where no step reaches the halfway point throws', async () => {
+    const route_data = {
+        routes: [{
+            staticDuration: '1000s',
+            legs: [{
+                steps: [
+                    { staticDuration: '100s', endLocation: { latLng: { latitude: 1, longitude: 1 } } },
+                    { staticDuration: '200s', endLocation: { latLng: { latitude: 2, longitude: 2 } } }
+                ]
+            }]
+        }]
+    };
+
+    expect(() => gm_routes.process_route(route_data)).toThrow('Could not determine a halfway point along the route');
+});

@@ -46,3 +46,26 @@ test('Mock post error', async() => {
     expect(response.error_data.error.status).toEqual('INVALID_ARGUMENT');
     expect(response.error_data.error.message).toEqual('Invalid JSON payload received. Unknown name \"origin\": Proto field is not repeating, cannot start list.\n + Invalid JSON payload received. Unknown name \"destination\": Proto field is not repeating, cannot start list.');
 });
+
+test('Mock post success with a body-level error_message (e.g. REQUEST_DENIED) is reported as an error', async() => {
+    // Some Google APIs (e.g. the legacy Geocoding API) signal errors like an
+    // invalid API key or exceeded quota with an HTTP 200 and the error
+    // encoded in the response body, not the HTTP status.
+    const json = { status: 'REQUEST_DENIED', error_message: 'The provided API key is invalid.', results: [] };
+
+    nock(HOST).post(PATH)
+    .reply(200, json);
+
+    const options = {
+        url: HOST + PATH,
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    };
+
+    const response = await http_util.call(options);
+    expect(response.hasError).toBe(true);
+    expect(response.status).toEqual(200);
+    expect(response.message).toEqual('The provided API key is invalid.');
+});

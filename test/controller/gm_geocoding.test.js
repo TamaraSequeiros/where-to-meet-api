@@ -32,3 +32,17 @@ test('get_coordinates reports an error on upstream failure', async () => {
     const result = await gm_geocoding.get_coordinates('Dam Square, Amsterdam');
     expect(result.hasError).toBe(true);
 });
+
+test('get_coordinates reports an error for a body-level failure (e.g. REQUEST_DENIED), not "no results found"', async () => {
+    // A quota/auth error comes back as HTTP 200 with an empty results array,
+    // so this must not be mistaken for a plain "address not found".
+    nock(HOST).get(PATH).query(true).reply(200, {
+        status: 'REQUEST_DENIED',
+        error_message: 'The provided API key is invalid.',
+        results: []
+    });
+
+    const result = await gm_geocoding.get_coordinates('Dam Square, Amsterdam');
+    expect(result.hasError).toBe(true);
+    expect(result.errorMessage).toEqual('Error geocoding address: Dam Square, Amsterdam');
+});
