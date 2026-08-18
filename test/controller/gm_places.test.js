@@ -1,5 +1,4 @@
-process.env['NODE_DEV'] = 'TEST';
-const nock = require('nock');
+const nock = require('../setup/nock_setup');
 const gm_places = require('../../src/controller/gm_places');
 const file_util = require('../../src/util/file_util');
 

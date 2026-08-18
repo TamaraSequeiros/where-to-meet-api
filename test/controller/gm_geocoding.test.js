@@ -1,5 +1,4 @@
-process.env['NODE_DEV'] = 'TEST';
-const nock = require('nock');
+const nock = require('../setup/nock_setup');
 const gm_geocoding = require('../../src/controller/gm_geocoding');
 
 const HOST = 'https://maps.googleapis.com';
