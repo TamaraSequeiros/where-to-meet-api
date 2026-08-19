@@ -1,5 +1,5 @@
 const express = require('express');
-const gm_routes = require('../controller/gm_routes');
+const gm_bike_meet = require('../controller/gm_bike_meet');
 const gm_geocoding = require('../controller/gm_geocoding');
 const debug = require('../util/debug_log');
 
@@ -17,10 +17,10 @@ router.post('/:middle', async function(req, res) {
       const locations = await find_coordinates(req.body);
       debug.log('Requested locations: ' + JSON.stringify(locations) + ', with method: ' + req.body.method);
 
-      const middle_point = await calculate_middle(req.body.method, locations[0], locations[1]);
-      debug.log('Calculated middle point: ' + JSON.stringify(middle_point));
+      const result = await calculate_middle(req.body.method, locations[0], locations[1]);
+      debug.log('Calculated middle result: ' + JSON.stringify(result));
 
-      res.json({ middle_point });
+      res.json(result);
    } catch (error) {
       console.error(error);
       res.status(error.status || 500).json({ error: error.message || 'Unable to calculate middle point' });
@@ -57,15 +57,26 @@ async function find_coordinates(reqBody) {
 async function calculate_middle(method, origin, destination) {
    if (method === 'geographical') {
       return {
-         lat: (origin.lat + destination.lat) / 2,
-         lng: (origin.lng + destination.lng) / 2
+         middle_point: {
+            lat: (origin.lat + destination.lat) / 2,
+            lng: (origin.lng + destination.lng) / 2
+         }
       };
 
    } else if (method === 'route') {
       try {
-         return await gm_routes.calculate_middle(origin, destination);
+         // Real venues, ranked by a blend of bicycle-travel fairness and
+         // quality, are the candidates -- there's no separate abstract
+         // midpoint computed. middle_point (used for the map pin) is just
+         // the top-ranked venue's location; venues carries the full ranked
+         // list so the app can always offer several options, not just one.
+         const venues = await gm_bike_meet.find_bike_meeting_venues(origin, destination);
+         return {
+            middle_point: venues[0].location,
+            venues
+         };
       } catch (error) {
-         throw new AppError(error.message || 'Unable to calculate route-based middle point', 502);
+         throw new AppError(error.message || 'Unable to find a bicycle meeting point', 502);
       }
 
    } else {

@@ -2,10 +2,10 @@ const express = require('express');
 const request = require('supertest');
 
 jest.mock('../../src/controller/gm_geocoding');
-jest.mock('../../src/controller/gm_routes');
+jest.mock('../../src/controller/gm_bike_meet');
 
 const gm_geocoding = require('../../src/controller/gm_geocoding');
-const gm_routes = require('../../src/controller/gm_routes');
+const gm_bike_meet = require('../../src/controller/gm_bike_meet');
 const whereRouter = require('../../src/routes/where');
 
 const app = express();
@@ -53,28 +53,34 @@ describe('geographical method', () => {
 });
 
 describe('route method', () => {
-    test('delegates to gm_routes and returns its result', async () => {
-        const routeMiddle = { lat: 52.37, lng: 4.89 };
-        gm_routes.calculate_middle.mockResolvedValue(routeMiddle);
+    test('returns several ranked venues, with middle_point set to the top-ranked one', async () => {
+        const venues = [
+            { id: 'p1', location: { lat: 52.370, lng: 4.891 }, fairnessGapMinutes: 1 },
+            { id: 'p2', location: { lat: 52.372, lng: 4.893 }, fairnessGapMinutes: 3 },
+            { id: 'p3', location: { lat: 52.368, lng: 4.888 }, fairnessGapMinutes: 4 }
+        ];
+        gm_bike_meet.find_bike_meeting_venues.mockResolvedValue(venues);
 
         const res = await request(app)
             .post('/where/route')
             .send({ method: 'route', locations: [location1, location2] });
 
         expect(res.status).toBe(200);
-        expect(res.body).toEqual({ middle_point: routeMiddle });
-        expect(gm_routes.calculate_middle).toHaveBeenCalledWith(location1, location2);
+        expect(res.body).toEqual({ middle_point: venues[0].location, venues });
+        expect(gm_bike_meet.find_bike_meeting_venues).toHaveBeenCalledWith(location1, location2);
     });
 
-    test('wraps a gm_routes failure as a 502', async () => {
-        gm_routes.calculate_middle.mockRejectedValue(new Error('No bicycle route found between these locations'));
+    test('wraps a gm_bike_meet failure as a 502', async () => {
+        gm_bike_meet.find_bike_meeting_venues.mockRejectedValue(
+            new Error('Could not find any venues reachable by bicycle from both locations')
+        );
 
         const res = await request(app)
             .post('/where/route')
             .send({ method: 'route', locations: [location1, location2] });
 
         expect(res.status).toBe(502);
-        expect(res.body).toEqual({ error: 'No bicycle route found between these locations' });
+        expect(res.body).toEqual({ error: 'Could not find any venues reachable by bicycle from both locations' });
     });
 });
 
