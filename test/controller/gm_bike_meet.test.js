@@ -21,6 +21,8 @@ const place = (overrides = {}) => ({
     ...overrides
 });
 
+const summary = (duration) => ({ legs: [{ duration }] });
+
 afterEach(() => {
     nock.cleanAll();
 });
@@ -35,10 +37,10 @@ describe('merge_and_rank', () => {
                 place({ id: 'p4', displayName: { text: 'Closed' }, businessStatus: 'CLOSED_PERMANENTLY' })
             ],
             routingSummaries: [
-                { duration: '600s' },
-                { duration: '300s' },
-                { duration: '300s' },
-                { duration: '300s' }
+                summary('600s'),
+                summary('300s'),
+                summary('300s'),
+                summary('300s')
             ]
         };
         const fromB = {
@@ -49,10 +51,10 @@ describe('merge_and_rank', () => {
                 place({ id: 'p4' })
             ],
             routingSummaries: [
-                { duration: '660s' }, // p1: 60s gap
-                { duration: '900s' }, // p2: 600s gap, but much better rated
-                { duration: '300s' },
-                { duration: '300s' }
+                summary('660s'), // p1: 60s gap
+                summary('900s'), // p2: 600s gap, but much better rated
+                summary('300s'),
+                summary('300s')
             ]
         };
 
@@ -72,7 +74,7 @@ describe('merge_and_rank', () => {
                 place({ id: 'p1', displayName: { text: 'Very fair, bad rating' }, rating: 2.0 }),
                 place({ id: 'p2', displayName: { text: 'Less fair, perfect rating' }, rating: 5.0 })
             ],
-            routingSummaries: [{ duration: '300s' }, { duration: '300s' }]
+            routingSummaries: [summary('300s'), summary('300s')]
         };
         const fromB = {
             places: [
@@ -80,8 +82,8 @@ describe('merge_and_rank', () => {
                 place({ id: 'p2' })
             ],
             routingSummaries: [
-                { duration: '300s' }, // p1: 0s gap
-                { duration: '360s' }  // p2: 60s gap
+                summary('300s'), // p1: 0s gap
+                summary('360s')  // p2: 60s gap
             ]
         };
 
@@ -94,7 +96,7 @@ describe('merge_and_rank', () => {
     test('drops candidates missing a duration from either origin', () => {
         const fromA = {
             places: [place({ id: 'p1' })],
-            routingSummaries: [{ duration: '300s' }]
+            routingSummaries: [summary('300s')]
         };
         const fromB = { places: [], routingSummaries: [] };
 
@@ -127,11 +129,11 @@ describe('find_bike_meeting_venues', () => {
         const names = ['One', 'Two', 'Three', 'Four', 'Five'];
         const fromA = {
             places: names.map((name, i) => place({ id: `p${i}`, displayName: { text: name }, rating: 4.0 })),
-            routingSummaries: names.map((_, i) => ({ duration: `${300 + i * 10}s` }))
+            routingSummaries: names.map((_, i) => summary(`${300 + i * 10}s`))
         };
         const fromB = {
             places: fromA.places,
-            routingSummaries: names.map((_, i) => ({ duration: `${320 + i * 10}s` }))
+            routingSummaries: names.map((_, i) => summary(`${320 + i * 10}s`))
         };
 
         nock(HOST).post(NEARBY_PATH, originIsA).reply(200, fromA);
@@ -146,14 +148,14 @@ describe('find_bike_meeting_venues', () => {
     test('expands the search radius when too few candidates are found', async () => {
         const narrow = {
             places: [place({ id: 'p1' })],
-            routingSummaries: [{ duration: '300s' }]
+            routingSummaries: [summary('300s')]
         };
         const wide = {
             places: [
                 place({ id: 'p1' }),
                 place({ id: 'p2', displayName: { text: 'Farther but found on retry' } })
             ],
-            routingSummaries: [{ duration: '300s' }, { duration: '400s' }]
+            routingSummaries: [summary('300s'), summary('400s')]
         };
 
         nock(HOST).post(NEARBY_PATH, originIsA).reply(200, narrow);

@@ -54,24 +54,14 @@ const parse_duration_seconds = (durationString) => {
     return Number.isFinite(seconds) ? seconds : null;
 };
 
-// A routingSummary's exact shape isn't fully pinned down ahead of a live
-// smoke test -- accept either a flat `duration` field or a `legs[]` array
-// and sum it, so this doesn't hard-fail if the shape differs slightly from
-// what we expect in production.
 const extract_duration_seconds = (summary) => {
-    if (!summary) {
+    if (!summary || !Array.isArray(summary.legs)) {
         return null;
     }
-    if (typeof summary.duration === 'string') {
-        return parse_duration_seconds(summary.duration);
-    }
-    if (Array.isArray(summary.legs)) {
-        return summary.legs.reduce((total, leg) => {
-            const legSeconds = leg && parse_duration_seconds(leg.duration);
-            return legSeconds == null ? total : total + legSeconds;
-        }, 0);
-    }
-    return null;
+    return summary.legs.reduce((total, leg) => {
+        const legSeconds = leg && parse_duration_seconds(leg.duration);
+        return legSeconds == null ? total : total + legSeconds;
+    }, 0);
 };
 
 // Builds a { placeId: durationSeconds } map from a searchNearby+routingSummaries
