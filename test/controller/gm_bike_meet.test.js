@@ -66,6 +66,8 @@ describe('merge_and_rank', () => {
             bikeMinutesFromSecondLocation: 11,
             fairnessGapMinutes: 1
         });
+        expect(typeof ranked[0].score).toBe('number');
+        expect(ranked[0].score).toBeLessThanOrEqual(ranked[1].score);
     });
 
     test('a lower-fairness venue can outrank a fairer one when its rating is high enough', () => {

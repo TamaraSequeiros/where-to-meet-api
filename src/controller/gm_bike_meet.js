@@ -117,11 +117,12 @@ const merge_and_rank = (fromA, fromB) => {
     });
 
     candidates.sort((x, y) => x.score - y.score);
-    return candidates.map(({ place, durationA, durationB, fairnessGapSeconds }) => ({
+    return candidates.map(({ place, durationA, durationB, fairnessGapSeconds, score }) => ({
         ...venue_format.format_place(place),
         bikeMinutesFromFirstLocation: Math.round(durationA / 60),
         bikeMinutesFromSecondLocation: Math.round(durationB / 60),
-        fairnessGapMinutes: Math.round(fairnessGapSeconds / 60)
+        fairnessGapMinutes: Math.round(fairnessGapSeconds / 60),
+        score
     }));
 };
 

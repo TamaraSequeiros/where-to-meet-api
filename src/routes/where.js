@@ -67,14 +67,10 @@ async function calculate_middle(method, origin, destination) {
       try {
          // Real venues, ranked by a blend of bicycle-travel fairness and
          // quality, are the candidates -- there's no separate abstract
-         // midpoint computed. middle_point (used for the map pin) is just
-         // the top-ranked venue's location; venues carries the full ranked
-         // list so the app can always offer several options, not just one.
+         // midpoint computed. Each venue carries its own score, so the app
+         // can always offer several ranked options, not just one.
          const venues = await gm_bike_meet.find_bike_meeting_venues(origin, destination);
-         return {
-            middle_point: venues[0].location,
-            venues
-         };
+         return { venues };
       } catch (error) {
          throw new AppError(error.message || 'Unable to find a bicycle meeting point', 502);
       }
