@@ -1,6 +1,3 @@
-// Shared shaping/filtering for Places API results, used by both the plain
-// nearby-venues flow and the bicycle-fairness meeting-venue flow.
-
 const PRICE_LEVEL_SYMBOLS = {
     PRICE_LEVEL_INEXPENSIVE: '€',
     PRICE_LEVEL_MODERATE: '€€',
@@ -15,9 +12,7 @@ const is_closed = (place) => Boolean(place.businessStatus && place.businessStatu
 const has_enough_ratings = (place, minRatingCount = 10) =>
     Boolean(place.userRatingCount) && place.userRatingCount >= minRatingCount;
 
-// Reshapes a raw Places API place into the flatter shape the app returns:
-// displayName/primaryTypeDisplayName as plain strings, location as {lat,lng},
-// priceLevel as a euro-sign symbol.
+// Reshape a raw Places API place into the flatter shape the app returns
 const format_place = (place) => {
     const formatted = { ...place };
     if (formatted.displayName) {

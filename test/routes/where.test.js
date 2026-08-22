@@ -53,11 +53,11 @@ describe('geographical method', () => {
 });
 
 describe('route method', () => {
-    test('returns several ranked venues, with middle_point set to the top-ranked one', async () => {
+    test('returns several ranked venues, each carrying its own score', async () => {
         const venues = [
-            { id: 'p1', location: { lat: 52.370, lng: 4.891 }, fairnessGapMinutes: 1 },
-            { id: 'p2', location: { lat: 52.372, lng: 4.893 }, fairnessGapMinutes: 3 },
-            { id: 'p3', location: { lat: 52.368, lng: 4.888 }, fairnessGapMinutes: 4 }
+            { id: 'p1', location: { lat: 52.370, lng: 4.891 }, fairnessGapMinutes: 1, score: 1 },
+            { id: 'p2', location: { lat: 52.372, lng: 4.893 }, fairnessGapMinutes: 3, score: 3 },
+            { id: 'p3', location: { lat: 52.368, lng: 4.888 }, fairnessGapMinutes: 4, score: 4 }
         ];
         gm_bike_meet.find_bike_meeting_venues.mockResolvedValue(venues);
 
@@ -66,7 +66,7 @@ describe('route method', () => {
             .send({ method: 'route', locations: [location1, location2] });
 
         expect(res.status).toBe(200);
-        expect(res.body).toEqual({ middle_point: venues[0].location, venues });
+        expect(res.body).toEqual({ venues });
         expect(gm_bike_meet.find_bike_meeting_venues).toHaveBeenCalledWith(location1, location2);
     });
 
